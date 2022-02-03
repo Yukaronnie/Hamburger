@@ -1,0 +1,25 @@
+@import "../../foundation/mixin";
+.c-sidebar__menu{
+   
+    > li{
+        font-size: 1.5rem;
+        > a{
+            font-weight: bold;
+        }
+
+        ul{
+            font-size: 1.2rem;
+            margin: 1rem 0 2.8rem 1.5rem;
+
+            li{
+                margin-top: 2.3rem;
+                
+                
+            }
+            
+        }
+        
+    }
+
+
+}

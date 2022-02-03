@@ -1,0 +1,67 @@
+@import "../../foundation/mixin";
+
+.c-brunch-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include breakpoint(tab){
+        width: 50%;
+    }
+    
+    h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #EAEAEA;
+        font-size: 4.1rem;
+        padding: 1.1rem 0 0 1rem;
+        font-family:'Roboto';
+        
+    }
+    h2:after{
+        content: "";
+        display: block;
+        border-bottom: solid 0.4rem #FFFFFF;
+        padding-bottom: 1.9rem;
+        width: 3.3rem;
+    }
+    
+    &--square1, &--square2{
+        display: inline-block;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #3C2A10;
+        width: 31.4rem;
+        height: 16.3rem;
+        opacity: 0.8;
+        padding: 0 1rem;
+        
+        dt{
+            padding: 1.9rem 0;
+            font-size: 2.2rem;
+            font-family: 'M PLUS 1p';
+            text-align: left;
+            font-weight: bold;
+            
+        }
+        dd{
+            font-size: 1.6rem;
+            font-family: 'M PLUS 1p';
+            text-align: left;
+
+        }
+    
+    }
+    &--square1{
+        display: inline-block;
+        width: 90%;
+        position: absolute;
+        top: 29.7rem; 
+    }
+    &--square2{
+        display: inline-block;
+        width: 90%;
+        position: absolute;
+        top: 46.9rem;
+    }
+}

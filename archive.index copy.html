@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        
+        <title>Hamburger Web</title>
+        <meta name="description" content="説明が入ります">
+        
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        
+    
+    
+    
+    </head>
+<!--1.
+    2.archiveのscssはどこに作る？
+    3.下の余白が気になる。
+    3.tabでメニューを開いたままpcサイズにすると、メニューがそのまま残ってしまうのを直す。
+    4.ハイフンなのか、アンダーバーなのか、ハイフンハイフンなのか、FLOCSSの命名規則に従って、書き直さなければならない。
+    5.
+-->
+    <body>
+        <!--フロントページ全体-->
+        <div class="l-main">
+            <!--フロントページの左部分-->
+            <article class="p-main-left">
+            <div class="p-main-left-black-screen">
+
+            
+                <!--フロントページのヘッダー部分-->
+                <header class="p-main-left__header"><!--命名方法がわからない！l-main-left__headerなんだこれ？-->
+                    <!--スマホ,iPadのメニューボタン-->
+                    <button class="p-main-left__header__btn">
+                        <a href="#">Menu</a>
+                    </button>
+                    <div class="p-main-left__header__title">
+                        <h1>Hamburger</h1>
+
+                    </div>
+                    <!--ヘッダーの検索フォーム-->
+                    <form class="p-search-form" action="" method="post">
+                        <label for="screen-reader-text" class="screen-reader-text"></label>
+                        <input class="fas fa-2x p-search-form__keyword" type="search" name="screen-reader-text" value="  &#xf002;"></input>
+                        <input class="p-search-form__submit" type="submit" value="検索"></input>
+
+                    </form>
+                
+    
+                    
+                </header>
+                <!--フロントページヘッダー下-->
+                <article class="p-contents">
+                    <!--フロントページトップの画像-->
+                    <div class="p-top-img">
+                        <h2>Menu:</h2>
+                    </div>
+                    <!--フロントページの中央部分-->
+                    <div class="p-brunch-menu">
+                        
+                        <ul class="p-brunch-menu__wrapper">
+                            <!--フロントページのTake out部分-->
+                            <li class="c-brunch-menu p-brunch-takeout">
+                                
+                                <h2>Take Out</h2>
+                                <dl class="c-brunch-menu--square1 p-brunch-takeout-square1">
+                                    <dt>Take Out</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                                <dl class="c-brunch-menu--square2 p-brunch-takeout-square2">
+                                    <dt>Take Out</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+
+
+                            </li>
+
+                    
+                            <!--フロントページのEat in部分-->
+                            <li class="c-brunch-menu p-brunch-eatin">
+                                
+                                <h2>Eat In</h2>
+                                <dl class="c-brunch-menu--square1">
+                                    <dt>Eat In</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                                <dl class="c-brunch-menu--square2">
+                                    <dt>Eat In</dt>
+                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+
+
+                            </li>
+                        </ul>
+
+                        
+    
+    
+                    </div>
+                    <!--フロントページアクセス-->
+                    <section class="p-access">
+                        
+                        <div class="p-access--black">
+                            <h2>見出しが入ります</h2>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    
+                            
+                        </div>
+
+                          
+                            
+                    </section>
+    
+    
+                </article>
+                    
+                <!--<footer class="p-main-left__footer">
+                    <ul class="p-main-left__footer--menu">
+                        <li class="p-main-left__footer--menu-shop"><a href="#">ショップ情報</a></li>
+                        <li class="p-main-left__footer--menu-history"><a href="#">ヒストリー</a></li>
+        
+                    </ul>
+                    <address class="p-main-left__footer--copyright">Copyright: RaiseTech</address>
+        
+        
+        
+                </footer>-->
+                
+            
+            </div>
+            </article>
+
+       
+            
+                
+            <!--サイドバー-->
+            <sidebar class="l-main__sidebar">
+                
+                <div class="l-main__sidebar--right">
+                    <button class="p-sidebar-close-btn">
+                        <span></span><span></span>
+                    </button>
+                    <h2 class="p-sidebar__title">Menu</h2>
+                    <div class="p-sidebar__menu">
+                        <ul class="c-sidebar__menu p-sidebar__menu--hamburger">
+                            <li><a href="#">バーガー</a>
+                                <ul>
+                                    <li><a href="#">ハンバーガー</a></li>
+                                    <li><a href="#">チーズバーガー</a></li>
+                                    <li><a href="#">テリヤキバーガー</a></li>
+                                    <li><a href="#">アボカドバーガー</a></li>
+                                    <li><a href="#">フィッシュバーガー</a></li>
+                                    <li><a href="#">ベーコンバーガー</a></li>
+                                    <li><a href="#">チキンバーガー</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="c-sidebar__menu p-sidebar__menu--sides">
+                            <li><a href="#">サイド</a>
+                                <ul>
+                                    <li><a href="#">ポテト</a></li>
+                                    <li><a href="#">サラダ</a></li>
+                                    <li><a href="#">ナゲット</a></li>
+                                    <li><a href="#">コーン</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="c-sidebar__menu p-sidebar__menu--drinks">
+                            <li><a href="#">ドリンク</a>
+                                <ul>
+                                    <li><a href="#">コーラ</a></li>
+                                    <li><a href="#">ファンタ</a></li>
+                                    <li><a href="#">オレンジ</a></li>
+                                    <li><a href="#">アップル</a></li>
+                                    <li><a href="#">紅茶(Ice/Hot)</a></li>
+                                    <li><a href="#">コーヒー(Ice/Hot)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+
+
+                    </div>
+
+                </div>
+
+                
+            
+                
+                    
+            </sidebar>
+        </div>
+        <footer class="l-footer-pc p-footer-pc">
+            <ul class="p-footer-pc__menu">
+                <li class="p-footer-pc__menu--shop"><a href="#">ショップ情報</a></li>
+                <li class="p-footer-pc__menu--history"><a href="#">ヒストリー</a></li>
+
+            </ul>
+            <address class="p-footer-pc__copyright">Copyright: RaiseTech</address>
+
+
+
+        </footer>
+
+    
+                
+
+    
+        
+
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(window).on('load resize',function(){
+                var wid = $(window).width();
+                if (wid <=599) {   
+                    $(".p-main-left__header__btn").click(function(){
+                    $(".l-main__sidebar").toggleClass('active');
+                });
+                    $(".p-sidebar-close-btn").click(function(){
+                    $(".l-main__sidebar").removeClass('active');
+                
+                });
+                } else if(wid <=1024) {
+                    $(".p-main-left__header__btn").click(function(){
+                    $(".l-main__sidebar").toggleClass('active');
+                   
+                });
+                    $(".p-sidebar-close-btn").click(function(){
+                    $(".l-main__sidebar").removeClass('active');
+                
+                });
+      
+                } else {
+                    
+
+                }
+            });
+        </script>
+    </body> 
+
+</html>
