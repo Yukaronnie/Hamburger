@@ -18,10 +18,10 @@
     
     </head>
 <!--1.
-    2.archiveのscssはどこに作る？
+    2.地図の文章がはみ出る
     3.下の余白が気になる。
-    3.tabでメニューを開いたままpcサイズにすると、メニューがそのまま残ってしまうのを直す。
-    4.ハイフンなのか、アンダーバーなのか、ハイフンハイフンなのか、FLOCSSの命名規則に従って、書き直さなければならない。
+    3.jQueryが効かない時がある。メニューボタンをクリックしても、サイドバーが開いたり開かなかったりする。
+    4.
     5.
 -->
     <body>
@@ -29,15 +29,15 @@
         <div class="l-main">
             <!--フロントページの左部分-->
             <article class="p-main-left">
-            <div class="p-main-left-black-screen">
+            
 
             
                 <!--フロントページのヘッダー部分-->
-                <header class="p-main-left__header"><!--命名方法がわからない！l-main-left__headerなんだこれ？-->
+                <header class="p-main-left__header">
                     <!--スマホ,iPadのメニューボタン-->
-                    <button class="p-main-left__header__btn">
+                    <div class="p-main-left__header__btn">
                         <a href="#">Menu</a>
-                    </button>
+                    </div>
                     <div class="p-main-left__header__title">
                         <h1>Hamburger</h1>
 
@@ -57,7 +57,7 @@
                 <article class="p-contents">
                     <!--フロントページトップの画像-->
                     <div class="p-top-img">
-                        <h2>Menu:</h2>
+                        <h2>ダミーサイト</h2>
                     </div>
                     <!--フロントページの中央部分-->
                     <div class="p-brunch-menu">
@@ -106,7 +106,7 @@
                         
                         <div class="p-access--black">
                             <h2>見出しが入ります</h2>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     
                             
                         </div>
@@ -118,20 +118,9 @@
     
                 </article>
                     
-                <!--<footer class="p-main-left__footer">
-                    <ul class="p-main-left__footer--menu">
-                        <li class="p-main-left__footer--menu-shop"><a href="#">ショップ情報</a></li>
-                        <li class="p-main-left__footer--menu-history"><a href="#">ヒストリー</a></li>
-        
-                    </ul>
-                    <address class="p-main-left__footer--copyright">Copyright: RaiseTech</address>
-        
-        
-        
-                </footer>-->
                 
             
-            </div>
+            
             </article>
 
        
@@ -141,9 +130,9 @@
             <sidebar class="l-main__sidebar">
                 
                 <div class="l-main__sidebar--right">
-                    <button class="p-sidebar-close-btn">
+                    <div class="p-sidebar-close-btn">
                         <span></span><span></span>
-                    </button>
+                    </div>
                     <h2 class="p-sidebar__title">Menu</h2>
                     <div class="p-sidebar__menu">
                         <ul class="c-sidebar__menu p-sidebar__menu--hamburger">
@@ -194,10 +183,10 @@
                     
             </sidebar>
         </div>
-        <footer class="l-footer-pc p-footer-pc">
-            <ul class="p-footer-pc__menu">
-                <li class="p-footer-pc__menu--shop"><a href="#">ショップ情報</a></li>
-                <li class="p-footer-pc__menu--history"><a href="#">ヒストリー</a></li>
+        <footer class="l-footer p-footer">
+            <ul class="p-footer__menu">
+                <li class="p-footer__menu--shop"><a href="#">ショップ情報</a></li>
+                <li class="p-footer__menu--history"><a href="#">ヒストリー</a></li>
 
             </ul>
             <address class="p-footer-pc__copyright">Copyright: RaiseTech</address>
@@ -216,17 +205,12 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
+            $(function(){
+
+            });
             $(window).on('load resize',function(){
                 var wid = $(window).width();
-                if (wid <=599) {   
-                    $(".p-main-left__header__btn").click(function(){
-                    $(".l-main__sidebar").toggleClass('active');
-                });
-                    $(".p-sidebar-close-btn").click(function(){
-                    $(".l-main__sidebar").removeClass('active');
-                
-                });
-                } else if(wid <=1024) {
+                if(wid <=1024) {
                     $(".p-main-left__header__btn").click(function(){
                     $(".l-main__sidebar").toggleClass('active');
                    
@@ -237,6 +221,8 @@
                 });
       
                 } else {
+                    $(".l-main__sidebar").removeClass('active');
+
                     
 
                 }

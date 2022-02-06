@@ -1,99 +1,5 @@
 @import "../../foundation/mixin";
 //front-page
-.p-main-left{
-    width: 100%;
-    text-align: center;
-    @include breakpoint(pc){
-        text-align: initial;
-        
-    }
-    
-
-    &__header{
-        background-color: #FFF7EF;
-        @include breakpoint(pc){
-            display: flex;
-            justify-content: space-between;
-        }
-        &__btn{
-            font-weight: bold;
-            font-size: 2rem;
-            float: right;    
-            color: #707070;
-            font-family: 'Roboto';
-            margin: 1.4rem 1.4rem 0 0;
-            
-            @include breakpoint(pc){
-            display: none;
-        }
-        
-            
-        }
-        h1{
-            font-size: 4rem;
-            font-family: 'Roboto';
-            color: #707070;
-            margin: 3.9rem 0 3.9rem 0;
-            clear: both;
-            @include breakpoint(pc){
-                padding-left: 2rem;
-                
-            }
-            
-            
-        }
-        .p-search-form{
-            @include breakpoint(pc){
-                display: flex;
-                align-items: center;
-                padding-right: 2rem;
-                
-            }
-            .p-search-form__keyword{
-                position: relative;
-                height: 4.6rem;
-                width: 25rem;
-                background-color: #FFFFFF;
-                border: solid .1rem #707070;
-                border-radius: 1rem;
-                margin-right: 1rem;
-                color: #707070;
-                margin-bottom: 3.9rem;
-                @include breakpoint(pc){
-                    transform: translateY(45%);
-                }
-            
-            }
-            
-            
-            .p-search-form__submit{
-                height: 4.6rem;
-                width: 7.8rem;
-                background: linear-gradient(#F2EDE9, #DED8D3);
-                border: solid .1rem #707070;
-                border-radius: 1rem;
-                font-family: 'M PLUS 1p', sans-serif;
-                color: #707070;
-                font-size: 1.6rem;
-                
-            
-            }
-
-        }
-        
-        
-        
-
-
-    }
-    @include breakpoint(pc){
-        width: 155.3rem;
-
-    }
-
-}
-
-
 .p-contents{
     .p-top-img{
         height: 28.5rem;
@@ -103,12 +9,21 @@
         align-items: center;
         h2{
             color: #FFFFFF;
-            font-size: 2rem;
+            font-size: 4rem;
             margin-left: 4rem;
             
 
         }
+        
     }
+    
+    .p-top-img--archive{
+        background-image: url(../../../images/archive_top_img.png);
+        background-color: #000000;
+        background-size: cover;
+    }
+    
+    
     .p-brunch-menu{
         
         .p-brunch-menu__wrapper{
@@ -143,6 +58,17 @@
         }
         
           
+    }
+    .p-brunch-menu--archive{
+        &--cheeseburger{
+           
+            &--pic{
+                background-image: url(../../../images/archive_doublecheese-burger_img.png);
+                background-size: 100% auto;
+                height: 23rem;
+            
+            }
+        }
     }
 
     .p-access{
@@ -205,6 +131,20 @@
         }
 
     
+    }
+}
+.p-contents--archive{
+    h2{
+        color: #3C2A10;
+        font-size: 2.8rem;
+        margin: 3rem 2.2rem;
+        text-align: left;
+        
+    }
+    >p{
+        color: #3C2A10;
+        font-size: 1.6rem;
+        margin: 0 2.2rem;
     }
 }
 .p-sidebar-close-btn{

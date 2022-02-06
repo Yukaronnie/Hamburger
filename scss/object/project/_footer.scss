@@ -1,0 +1,44 @@
+@import "../../foundation/mixin";
+.p-footer{
+    background-image: url(../../../images/front_footer_brown_img.png);
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    height: 15rem;
+    
+    &__menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+        li{
+            font-size: 2rem;
+        }
+        &--shop{
+            margin-right: 1.5rem;
+        }
+        &--history{
+            position: relative;
+            margin-left: 1.5rem;
+                
+            }
+            &--history:before{
+                position: absolute;
+                content: "";
+                width: .2rem;
+                right: 100%;
+                background-color: #FFFFFF;
+                height: 2rem;
+                margin: 0 1.4rem;
+                top: .5rem;
+
+
+            }
+        }
+    &__copyright{
+        font-size: 1.4rem;
+        padding-top: 3.4rem;
+    
+    }
+
+
+}

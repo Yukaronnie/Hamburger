@@ -17,27 +17,25 @@
     
     
     </head>
-<!--1.
-    2.地図の文章がはみ出る
-    3.下の余白が気になる。
-    3.tabでメニューを開いたままpcサイズにすると、メニューがそのまま残ってしまうのを直す。
-    4.
-    5.
+<!--1.c-cardの画像が横幅を変えた時におかしくなる
+    2.
+    3.
+    3.
 -->
     <body>
         <!--フロントページ全体-->
         <div class="l-main">
             <!--フロントページの左部分-->
             <article class="p-main-left">
-            <div class="p-main-left-black-screen">
+            
 
             
                 <!--フロントページのヘッダー部分-->
-                <header class="p-main-left__header"><!--命名方法がわからない！l-main-left__headerなんだこれ？-->
+                <header class="p-main-left__header">
                     <!--スマホ,iPadのメニューボタン-->
-                    <div class="p-main-left__header__btn">
+                    <button class="p-main-left__header__btn">
                         <a href="#">Menu</a>
-                    </div>
+                    </button>
                     <div class="p-main-left__header__title">
                         <h1>Hamburger</h1>
 
@@ -53,85 +51,84 @@
     
                     
                 </header>
-                <!--フロントページヘッダー下-->
-                <article class="p-contents">
-                    <!--フロントページトップの画像-->
-                    <div class="p-top-img">
-                        <h2>ダミーサイト</h2>
+                <!--アーカイブヘッダー下-->
+                <article class="p-contents p-contents--archive">
+                    <!--アーカイブページトップの画像-->
+                    <div class="p-top-img p-top-img--archive">
+                        <h2>Menu:2</h2>
                     </div>
-                    <!--フロントページの中央部分-->
-                    <div class="p-brunch-menu">
-                        
-                        <ul class="p-brunch-menu__wrapper">
-                            <!--フロントページのTake out部分-->
-                            <li class="c-brunch-menu p-brunch-takeout">
-                                
-                                <h2>Take Out</h2>
-                                <dl class="c-brunch-menu--square1 p-brunch-takeout-square1">
-                                    <dt>Take Out</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
-                                <dl class="c-brunch-menu--square2 p-brunch-takeout-square2">
-                                    <dt>Take Out</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
+                    <!--アーカイブページの中央部分-->
 
+                    <h2>小見出しが入ります</h2>
+                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="p-brunch-menu--archive">
+                        
+                        <ul class="">
+                            <!--アーカイブページの各メニュー部分-->
+                            <li class="c-card p-brunch-menu--archive--cheeseburger">
+                                <div class="p-brunch-menu--archive--cheeseburger--pic"></div>
+                                <div class="c-card--bottom">
+                                    <h3>チーズバーガー</h3>
+                                    <h4>小見出しが入ります</h4>
+                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                    <button class="c-btn--archive">詳しく見る</button>
+
+                                </div>
+                                
 
                             </li>
 
                     
-                            <!--フロントページのEat in部分-->
-                            <li class="c-brunch-menu p-brunch-eatin">
-                                
-                                <h2>Eat In</h2>
-                                <dl class="c-brunch-menu--square1">
-                                    <dt>Eat In</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
-                                <dl class="c-brunch-menu--square2">
-                                    <dt>Eat In</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
+                            <li class="c-card p-brunch-menu--archive--cheeseburger">
+                                <div class="p-brunch-menu--archive--cheeseburger--pic"></div>
+                                <div class="c-card--bottom">
+                                    <h3>チーズバーガー</h3>
+                                    <h4>小見出しが入ります</h4>
+                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                    <button class="c-btn--archive">詳しく見る</button>
 
+                                </div>
+                                
 
                             </li>
+
+                            <li class="c-card p-brunch-menu--archive--cheeseburger">
+                                <div class="p-brunch-menu--archive--cheeseburger--pic"></div>
+                                <div class="c-card--bottom">
+                                    <h3>チーズバーガー</h3>
+                                    <h4>小見出しが入ります</h4>
+                                    <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                                    <button class="c-btn--archive">詳しく見る</button>
+
+                                </div>
+                                
+
+                            </li>
+
+                            
                         </ul>
 
+
                         
     
     
                     </div>
-                    <!--フロントページアクセス-->
-                    <section class="p-access">
-                        
-                        <div class="p-access--black">
-                            <h2>見出しが入ります</h2>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     
-                            
-                        </div>
-
-                          
-                            
-                    </section>
     
     
                 </article>
+
+                <div class="p-change-btn">
                     
-                <!--<footer class="p-main-left__footer">
-                    <ul class="p-main-left__footer--menu">
-                        <li class="p-main-left__footer--menu-shop"><a href="#">ショップ情報</a></li>
-                        <li class="p-main-left__footer--menu-history"><a href="#">ヒストリー</a></li>
-        
-                    </ul>
-                    <address class="p-main-left__footer--copyright">Copyright: RaiseTech</address>
-        
-        
-        
-                </footer>-->
+                    <a href="./archive1.html" class="p-change-btn--prev">＜＜ 前へ</a>
+                    <a href="" class="p-change-btn--next">次へ ＞＞<span></span></a>
+              
+                </div>
+                    
+                
                 
             
-            </div>
+            
             </article>
 
        
@@ -141,9 +138,9 @@
             <sidebar class="l-main__sidebar">
                 
                 <div class="l-main__sidebar--right">
-                    <div class="p-sidebar-close-btn">
+                    <button class="p-sidebar-close-btn">
                         <span></span><span></span>
-                    </div>
+                    </button>
                     <h2 class="p-sidebar__title">Menu</h2>
                     <div class="p-sidebar__menu">
                         <ul class="c-sidebar__menu p-sidebar__menu--hamburger">
@@ -194,13 +191,17 @@
                     
             </sidebar>
         </div>
+
+        
+        
+
         <footer class="l-footer p-footer">
             <ul class="p-footer__menu">
                 <li class="p-footer__menu--shop"><a href="#">ショップ情報</a></li>
                 <li class="p-footer__menu--history"><a href="#">ヒストリー</a></li>
 
             </ul>
-            <address class="p-footer-pc__copyright">Copyright: RaiseTech</address>
+            <address class="p-footer__copyright">Copyright: RaiseTech</address>
 
 
 
@@ -237,6 +238,7 @@
                 });
       
                 } else {
+                    $(".l-main__sidebar").removeClass('active');
                     
 
                 }
