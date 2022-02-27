@@ -1,153 +1,139 @@
 @import "../../foundation/mixin";
 //front-page
-.p-contents{
-    .p-top-img{
-        height: 28.5rem;
-        background: url(../../../images/sp_front_top_img.png) no-repeat center center;
+.p-top-img--front-page{
+    height: 28.5rem;
+    background: url(../../../images/front-page_top_img.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    @include breakpoint(pc){
+        background: url(../../../images/front-page_top_pc_img.png) no-repeat center center;
         background-size: cover;
-        display: flex;
-        align-items: center;
-        h2{
-            color: #FFFFFF;
-            font-size: 4rem;
-            margin-left: 4rem;
-            
+        height: 53em;
 
-        }
+    }
+    h2{
+        color: #FFFFFF;
+        font-size: 4rem;
+        margin-left: 4rem;
         
+
     }
     
-    .p-top-img--archive{
-        background-image: url(../../../images/archive_top_img.png);
+}
+.p-top-img--archive{
+    background: url(../../../images/archive_top_img.png) no-repeat center center;
+    background-color: #000000;
+    background-size: cover;
+    height: 28.5rem;
+    display: flex;
+    align-items: center;
+    @include breakpoint(pc){
+        background: url(../../../images/archive_top_pc_img.png) no-repeat center center;
         background-color: #000000;
-        background-size: cover;
+        height: 24rem;
     }
-    
-    
-    .p-brunch-menu{
-        
-        .p-brunch-menu__wrapper{
-            padding: 2rem 2rem 0;
-            .p-brunch-takeout{
-                height: 64.2rem;
-                background: url(../../../images/sp_front_img1.png) no-repeat center center;
-                background-size: cover;
-                margin-bottom: 2rem;
-                @include breakpoint(tab){
-                    margin-right: 2rem;
-                }
-                @include breakpoint(pc){
-                    margin:3rem 2rem 6rem 3rem;
-                }
-            }
-            .p-brunch-eatin{
-                height: 64.2rem;
-                background: url(../../../images/sp_front_img2.png) no-repeat center center;
-                background-size: cover;
-                margin-bottom: 2rem;
-                @include breakpoint(pc){
-                    margin:3rem 3rem 6rem 2rem;
-                }
-
-            }
-            @include breakpoint(tab){
-                display: flex;
-            }
-             
-
-        }
-        
-          
-    }
-    .p-brunch-menu--archive{
-        &--cheeseburger{
-           
-            &--pic{
-                background-image: url(../../../images/archive_doublecheese-burger_img.png);
-                background-size: 100% auto;
-                height: 23rem;
-            
-            }
-        }
-    }
-
-    .p-access{
-        height: auto;
-        position: relative;
-        height: 69.1rem;
-        background: black;
-        background-image: url(../../../images/front_bottom_img.png);
-        background-size: contain;
-        padding: 0 4.2rem;
+    h2{
+        color: #FFFFFF;
+        font-size: 4rem;
+        margin-left: 4rem;
         
 
-        
-        &--black{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 41.5rem;
-            background-color: rgba(0, 0, 0, .29);
-            color: #FFFFFF;
-            padding: 4.2rem 4rem 0;
-            @include breakpoint(tab){
-                height: 100%;
-                
-            }
-            @include breakpoint(pc){
-                width: 61%;
-            }
-            
-
-            h2{
-                top: 4rem;
-                left: 0;
-                font-family: 'M PLUS 1p', sans-serif;
-                font-size: 3rem;
-                color: #FFFFFF;
-                text-align: left;
-                
-                
-            }
-            h2:after{
-                content: "";
-                display: block;
-                border-bottom: solid 0.2rem #FFFFFF;
-                padding-bottom: 2rem;
-                width: 7.5rem;
-            }
-            p{
-                margin-top: 3.5rem;
-                font-size: 1.4rem;
-                font-family: 'M PLUS 1p', sans-serif;
-                color: #FFFFFF;
-                line-height: 2.3;
-    
-            }
-    
-            
-  
-        }
-
-    
     }
 }
+.p-top-img--single{
+    background: url(../../../images/single_top_img.png)no-repeat center center;
+    background-color: #000000;
+    background-size: cover;
+    height: 28.5rem;
+    display: flex;
+    align-items: center;
+    @include breakpoint(tab){
+        height: 50rem;
+        background: url(../../../images/single_top_tab_img.png)no-repeat center center;
+        background-size: cover;
+    }
+    @include breakpoint(pc){
+        background: url(../../../images/single_top_pc_img.png)no-repeat center center;
+        background-color: #000000;
+        background-size: cover;
+
+    }
+    h2{
+        color: #FFFFFF;
+        font-size: 4rem;
+        margin-left: 4rem;
+        
+
+    }
+}
+
+
+.p-brunch-menu{
+    
+    .p-brunch-menu__wrapper{
+        padding: 2rem 2rem 0;
+        .p-brunch-takeout{
+            height: 64.2rem;
+            background: url(../../../images/front-page_brunch_img1.png) no-repeat center center;
+            background-size: cover;
+            margin-bottom: 2rem;
+            @include breakpoint(tab){
+                margin-right: 2rem;
+            }
+            @include breakpoint(pc){
+                margin:3rem 2rem 6rem 3rem;
+            }
+        }
+        .p-brunch-eatin{
+            height: 64.2rem;
+            background: url(../../../images/front-page_brunch_img2.png) no-repeat center center;
+            background-size: cover;
+            margin-bottom: 2rem;
+            @include breakpoint(pc){
+                margin:3rem 3rem 6rem 2rem;
+            }
+
+        }
+        @include breakpoint(tab){
+            display: flex;
+        }
+        
+    }
+    
+        
+}
+.p-menu--archive{
+    &--cheeseburger{
+        background-image: url(../../../images/archive_doublecheese-burger_img.png);
+        
+    }
+    
+}
+
+
+
+//archiveの記述
 .p-contents--archive{
+    padding: 2.1rem 2rem 0;
     h2{
         color: #3C2A10;
         font-size: 2.8rem;
-        margin: 3rem 2.2rem;
+        margin: 3rem 0;
         text-align: left;
-        
+
     }
     >p{
         color: #3C2A10;
         font-size: 1.6rem;
-        margin: 0 2.2rem;
+        margin-bottom: 2.2rem;
+        
+    }
+    @include breakpoint(pc){
+        padding: 2.1rem 5rem 0;   
     }
 }
-.p-sidebar-close-btn{
+.p-sidebar__close-btn{
     cursor: pointer;
     float: right;
     width: 3.3rem;
@@ -175,7 +161,236 @@
 
 
 }
+//singleの記述
+.p-contents--single{
+    margin: 0 2rem;
+    color: #3C2A10;
+    &__section{
+        text-align: left;
+    
+        h2{
+            font-size: 2.8rem;
+            margin: 3.1rem 0;
+            @include breakpoint(tab){
+                font-size: 3.6rem;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            margin-bottom: 3.1rem;
+        }
+        h3{
+            font-size: 2.4rem;
+            margin-bottom: 3.1rem;
+            @include breakpoint(tab){
+                font-size: 2.8rem;
+            }
+        }
+        h4{
+            font-size: 2rem;
+            margin-bottom: 3.1rem;
+        }
+        h5{
+            font-size: 2rem;
+            margin-bottom: 3.1rem;
+        }
+        h6{
+            font-size: 2rem;
+            margin-bottom: 3.1rem;
+        }
+    }
+    &__quote{
+        background-color: #F5F5F5;
+        font-size: 1.6rem;
+        padding: 2rem;
+        p{
+            margin-bottom: 3.2rem;
+        }
+        div{
+            padding-bottom: 3.1rem;
+        }
 
+    }
+    &__menu{
+        
+        &--top{
+            background-image: url(../../../images/single_article_top_img.png) ;
+            width: 100%;
+            height: auto;
+            background-size: 100%;
+            margin: 3rem 0;
+        }
+        &--top::before{
+            display: block;
+            content: "";
+            padding-top: 38%;
+        }
+        &--article{
+            li{
+                margin-bottom: 3rem;
+                display: flex;
+                p{
+                    
+                    width: 56%;
+                }
+                p:first-of-type{
+                    margin-left: 1rem;
+                }
+                p:last-of-type{
+                    margin-right: 1rem;
+                }
+
+            }
+            &--pic{
+                background-image: url(../../../images/single_article_img.png);
+                background-size: contain;
+                width: 44%;
+                @include breakpoint(tab){
+                    background-image: url(../../../images/single_article_tab_img.png);
+                    background-size: contain;
+                    width: 44%;
+                    height: 19rem;
+                }
+                @include breakpoint(pc){
+                    background-image: url(../../../images/single_article_pc_img.png);
+                    background-size: contain;
+                    width: 44%;
+                    height: 35rem;
+
+                }
+
+
+            }
+            
+
+        }
+        &--bottom{
+            background-image: url(../../../images/single_article_bottom_img.png);
+            background-size: contain;
+            background-position: center;
+            height: 20rem;
+            margin: 3rem 0;
+            @include breakpoint(tab){
+                background-image: url(../../../images/single_article_bottom_tab_img.png);
+                height: 35rem;
+            }
+        
+        }
+        &--pictures{               
+            &--pic1{
+                margin-top: 2rem;
+                background-image: url(../../../images/single_menu_img.png);
+                height: auto;
+                width: 100%;
+                background-size: 100%;
+                @include breakpoint(tab){
+                    width: 49%;
+
+                }
+                @include breakpoint(pc){
+                    width: 32%;
+
+                }  
+            
+            }
+            &--pic1::before{
+                display: block;
+                content: "";
+                padding-top: 58%;
+            }
+            ul{
+                @include breakpoint(tab){
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    
+                    
+
+                } 
+
+            }
+   
+            
+        }
+
+    }
+    &--lists{
+        text-align: left;
+        font-size: 1.6rem;
+        color: #3C2A10;
+         &--list{
+                margin: 4rem 0;
+                ul{
+                    margin-bottom: 4rem;
+                    
+                }
+                ul:nth-of-type(2){
+                    margin-left: 3.8rem;
+                }
+        
+        }
+            
+           
+    }
+    &--space{
+        background-color: #F5F5F5;
+        width: 100%;
+        height: 23.7rem;
+    }
+    &--space::before{
+        display: block;
+        content: "";
+        padding-top: 70%;
+       
+    }
+
+    &--table{
+        color: #707070;
+        border-collapse: collapse;
+        margin-top: 3rem;
+        font-size: 1.6rem;
+        width: 100%;
+        tr{
+            td:first-of-type {
+                padding: 2rem 2rem;
+ 
+            }
+            td:last-of-type {
+                padding: 2rem 4rem;
+ 
+            }
+            td{
+                border:.1rem solid #707070;
+            
+            }
+
+        } 
+         
+        
+        
+    }
+    &--btn{
+        height: 8rem;
+        width: 33.5rem;
+        color: #3C2A10;
+        font-weight: bold;
+        font-size: 1.6rem;
+        background: linear-gradient(180deg, #F2EDE9, #DED8D3);
+        border-radius: 15px;
+        border:bold .2rem #707070;
+        margin: 2rem 0;
+    }
+    &--bold{
+        text-align: left;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin-bottom: 17.7rem;
+    }
+
+}
+
+
+//sidebarの記述
 .p-sidebar{
     &__title{
         display: none;
@@ -207,49 +422,3 @@
 
 
 
-
-.p-footer{
-    background-image: url(../../../images/front_footer_brown_img.png);
-    background-size: cover;
-    color: #ffffff;
-    text-align: center;
-    height: 15rem;
-    
-    &__menu{
-    display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-        li{
-            font-size: 2rem;
-        }
-        &--shop{
-            margin-right: 1.5rem;
-        }
-        &--history{
-            position: relative;
-            margin-left: 1.5rem;
-                
-            }
-            &--history:before{
-                position: absolute;
-                content: "";
-                width: .2rem;
-                right: 100%;
-                background-color: #FFFFFF;
-                height: 2rem;
-                margin: 0 1.4rem;
-                top: .5rem;
-
-
-            }
-        }
-    &__copyright{
-        font-size: 1.4rem;
-        padding-top: 3.4rem;
-    
-    }
-
-
-}
-
-//archive

@@ -1,45 +1,32 @@
 @import "../../foundation/mixin";
 
 .p-access{
-    height: auto;
     position: relative;
-    height: 69.1rem;
+    height: auto;
+    width: 100%;
     background: black;
-    background-image: url(../../../images/front_bottom_img.png);
-    background-size: contain;
-    padding: 0 4.2rem;
-    
-
-    
-    &--black{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 41.5rem;
-        background-color: rgba(0, 0, 0, .29);
-        color: #FFFFFF;
-        padding: 4.2rem 4rem 0;
-        @include breakpoint(tab){
-            height: 100%;
-            
-        }
-        @include breakpoint(pc){
-            width: 61%;
-        }
+    background-image: url(../../../images/front-page_map_img.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    &__text{
+        background: linear-gradient(rgba(0, 0, 0, .29) 0%, rgba(0, 0, 0, .29) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
         
-
+        @include breakpoint(tab){
+            background: none;
+            background-color:rgba(0, 0, 0, .29);
+ 
+        }
         h2{
-            top: 4rem;
-            left: 0;
             font-family: 'M PLUS 1p', sans-serif;
             font-size: 3rem;
             color: #FFFFFF;
             text-align: left;
-            
+            margin-left: 10%;
+            padding-top: 4rem;
             
         }
-        h2:after{
+        h2::after{
             content: "";
             display: block;
             border-bottom: solid 0.2rem #FFFFFF;
@@ -47,17 +34,27 @@
             width: 7.5rem;
         }
         p{
-            margin-top: 3.5rem;
+            margin: 0 auto;
+            padding: 2rem 0;
             font-size: 1.4rem;
             font-family: 'M PLUS 1p', sans-serif;
             color: #FFFFFF;
             line-height: 2.3;
+            width: 80%;
 
         }
-
-        
-
+        @include breakpoint(pc){
+            width: 60%;
+        }
+    }
+    
+    
+    @include breakpoint(tab){
+        background-image: url(../../../images/front-page_map_tab_img.png) ;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
 }
+

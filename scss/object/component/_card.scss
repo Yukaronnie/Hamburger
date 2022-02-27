@@ -1,7 +1,19 @@
 @import "../../foundation/mixin";
 .c-card{
-    
-    margin: 2.1rem 2rem 0;
+    margin-bottom: 2rem;
+    &--pic{
+        background-size: cover;
+        height: 35vh;        
+        @include breakpoint(tab){
+            width: 50%;
+            height: auto;
+        }
+        @include breakpoint(pc){
+            height: 45vh; 
+        }
+
+
+    }
     
     
     &--bottom{
@@ -9,25 +21,39 @@
         background-color: #3C2B1C;
         color: #FFFFFF;
         
+        
+        
         h3{
             font-size: 2rem;
             text-align: left;
             margin: 2.3rem 0 2.3rem;
+            @include breakpoint(pc){
+                font-size: 3.6rem;
+            }
+
         }
         h4{
             font-size: 1.6rem;
             font-weight: bold;
             text-align: left;
             margin-bottom: 1rem;
+            @include breakpoint(pc){
+                font-size: 2.4rem;
+            }
         }
         p{
             font-size: 1.6rem;
             text-align: left;
             margin-right: 5.6rem;
         }
+        @include breakpoint(tab){
+            width: 50%;
+            
+        }
 
     }
 @include breakpoint(tab){
+    display: flex;
 
 };
 
