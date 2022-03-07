@@ -17,28 +17,27 @@
     
     
     </head>
-<!--1.レスポンシブに合わせて、画像を変えるようにする（topの画像とか）。
-    2.
-    3.下の余白が気になる。
-    3.
-    4.
+<!--0.
+    1.レスポンシブに合わせて、画像を変えるようにする（topの画像とか）。
+    2.全画像をimgにする
+    3.文字がフィットするように、ボックスが増えても通用するように直す
+    3.ソースコードがそのまま反映されるようにする、の意味を考える
+    4.検索ボタンがずれている理由を考える
     5.
 -->
     <body>
         <!--フロントページ全体-->
         <div class="l-main">
             <!--フロントページの左部分-->
-            <article class="p-main-left">
-            
-
+            <main class="p-main">
             
                 <!--フロントページのヘッダー部分-->
-                <header class="p-main-left-header">
+                <header class="p-main-header">
                     <!--スマホ,iPadのメニューボタン-->
-                    <div class="p-main-left-header__btn">
+                    <div id="p-main-header__btn" class="p-main-header__btn">
                         <a href="#">Menu</a>
                     </div>
-                    <div class="p-main-left-header__title">
+                    <div class="p-main-header__title">
                         <h1>Hamburger</h1>
 
                     </div>
@@ -53,87 +52,110 @@
     
                     
                 </header>
-                <!--フロントページヘッダー下-->
-                <div class="p-top-img--front-page">
+                <!--トップ画像-->
+                <!--<figure class="p-top-img--front-page">
+                    <img height="285" src="images/front-page_top_img.png" alt="トップのハンバーガーの写真" 
+                    srcset="images/front-page_top_tab_img.png 600w, 1025w" sizes="(max-width:1025px) 100vw, 1025px">
                     <h2>ダミーサイト</h2>
-                </div>
+                </figure>-->
+                <picture class="p-top-img--front-page">
+                    <source media="(min-width: 600px)" srcset="images/front-page/front-page_top_tab_img.png">
+                    <source media="(min-width: 1025px)" srcset="images/front-page/front-page_top_img.png">
+                    <img src="images/front-page/front-page_top_img.png" alt="トップのハンバーガーの写真">
+                        
+                    <h2>ダミーサイト</h2>
+                </picture>
+
                 <article class="p-contents">
-                    <!--フロントページトップの画像-->
-                    
-                    <!--フロントページの中央部分-->
-                    <div class="p-brunch-menu">
                         
-                        <ul class="p-brunch-menu__wrapper">
-                            <!--フロントページのTake out部分-->
-                            <li class="c-brunch-menu p-brunch-takeout">
-                                
-                                <h2>Take Out</h2>
-                                <dl class="c-brunch-menu__square1">
-                                    <dt>Take Out</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
-                                <dl class="c-brunch-menu__square2">
-                                    <dt>Take Out</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
+                    <ul class="p-contents__brunch-menu">
+                        <!--フロントページのTake out部分-->
+                        <li class="c-brunch-menu p-contents__brunch-menu--takeout">
+                            <picture class="c-brunch-menu__pic">
+                                <!--<source media="(min-width: 600px)" srcset="images/front-page/front-page_brunch_tab_img1.png">
+                                <source media="(min-width: 1025px)" srcset="images/front-page/front-page_brunch_pc_img1.png"-->
+                                <img src="images/front-page/front-page_brunch_img1.png" alt="テイクアウトの写真">
+                                    
+                                    <h2>Take Out</h2>
+                                    
+                                    <dl class="c-brunch-menu__pic__square1">
+                                        <dt>Take Out</dt>
+                                        <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                    </dl>
+                                    <dl class="c-brunch-menu__pic__square2">
+                                        <dt>Take Out</dt>
+                                        <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                    </dl>
+                            </picture>
+
+                        </li>
+
+                
+                        <!--フロントページのEat in部分-->
+                        <li class="c-brunch-menu p-contents__brunch-menu--eatin">
+                            
+                            <picture class="c-brunch-menu__pic">
+                                <!--<source media="(min-width: 600px)" srcset="images/front-page/front-page_brunch_tab_img2.png">
+                                <source media="(min-width: 1025px)" srcset="images/front-page/front-page_brunch_pc_img2.png">-->
+                                <img src="images/front-page/front-page_brunch_img2.png" alt="イートインの写真">
+                                    
+                                    <h2>Eat In</h2>
+                                    
+                                    <dl class="c-brunch-menu__pic__square1">
+                                        <dt>Eat In</dt>
+                                        <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                    </dl>
+                                    <dl class="c-brunch-menu__pic__square2">
+                                        <dt>Eat In</dt>
+                                        <dd>当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                    </dl>
+                            </picture>
 
 
-                            </li>
-
-                    
-                            <!--フロントページのEat in部分-->
-                            <li class="c-brunch-menu p-brunch-eatin">
-                                
-                                <h2>Eat In</h2>
-                                <dl class="c-brunch-menu__square1">
-                                    <dt>Eat In</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
-                                <dl class="c-brunch-menu__square2">
-                                    <dt>Eat In</dt>
-                                    <dd>当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
-
-
-                            </li>
-                        </ul>
+                        </li>
+                    </ul>
 
                         
     
     
-                    </div>
+                   
                     <!--フロントページアクセス-->
-                    <section class="p-access"> 
+                    <section class="p-access">
+                        <img class="p-access__map" src="images/front-page/front-page_map_img.png"
+                        srcset="images/front-page/front-page_map_img.png 375w,images/front-page/front-page_map_tab_img.png  834w,images/front-page/front-page_map_pc_img.png 1553w"
+                        sizes="(max-width: 599px) 375px,(max-width: 1024px) 834px,(min-width: 1025px) 1553px" alt="アクセスマップ">
+                        <!--<picture class="p-access__map">
+                            <source media="(min-width: 600px)" srcset="images/front-page/front-page_map_tab_img.png">
+                            <source media="(min-width: 1025px)" srcset="images/front-page/front-page_map_pc_img.png">
+                            <img src="images/front-page/front-page_map_img.png">
+                            
+                        </picture>-->
                         <div class="p-access__text">
                             <h2>見出しが入ります</h2>
-                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
 
                         </div> 
-                        
-                        
+  
                     </section>
     
     
                 </article>
-                    
-                
-            
-            
-            </article>
+
+            </main>
 
        
             
                 
             <!--サイドバー-->
-            <sidebar class="l-main__sidebar">
+            <sidebar class="l-sidebar">
                 
-                <div class="l-main__sidebar--right">
-                    <div class="p-sidebar__close-btn">
+                <div class="p-sidebar--narrow">
+                    <div id="p-sidebar--narrow__close-btn" class="p-sidebar--narrow__close-btn">
                         <span></span><span></span>
                     </div>
-                    <h2 class="p-sidebar__title">Menu</h2>
-                    <div class="p-sidebar__menu">
-                        <ul class="c-sidebar__menu p-sidebar__menu--hamburger">
+                    <h2 class="p-sidebar--narrow__title">Menu</h2>
+                    <div class="p-sidebar--narrow__menu">
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--hamburger">
                             <li><a href="#">バーガー</a>
                                 <ul>
                                     <li><a href="#">ハンバーガー</a></li>
@@ -146,7 +168,7 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="c-sidebar__menu p-sidebar__menu--sides">
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--sides">
                             <li><a href="#">サイド</a>
                                 <ul>
                                     <li><a href="#">ポテト</a></li>
@@ -156,7 +178,55 @@
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="c-sidebar__menu p-sidebar__menu--drinks">
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--drinks">
+                            <li><a href="#">ドリンク</a>
+                                <ul>
+                                    <li><a href="#">コーラ</a></li>
+                                    <li><a href="#">ファンタ</a></li>
+                                    <li><a href="#">オレンジ</a></li>
+                                    <li><a href="#">アップル</a></li>
+                                    <li><a href="#">紅茶(Ice/Hot)</a></li>
+                                    <li><a href="#">コーヒー(Ice/Hot)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--drinks">
+                            <li><a href="#">ドリンク</a>
+                                <ul>
+                                    <li><a href="#">コーラ</a></li>
+                                    <li><a href="#">ファンタ</a></li>
+                                    <li><a href="#">オレンジ</a></li>
+                                    <li><a href="#">アップル</a></li>
+                                    <li><a href="#">紅茶(Ice/Hot)</a></li>
+                                    <li><a href="#">コーヒー(Ice/Hot)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--drinks">
+                            <li><a href="#">ドリンク</a>
+                                <ul>
+                                    <li><a href="#">コーラ</a></li>
+                                    <li><a href="#">ファンタ</a></li>
+                                    <li><a href="#">オレンジ</a></li>
+                                    <li><a href="#">アップル</a></li>
+                                    <li><a href="#">紅茶(Ice/Hot)</a></li>
+                                    <li><a href="#">コーヒー(Ice/Hot)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--drinks">
+                            <li><a href="#">ドリンク</a>
+                                <ul>
+                                    <li><a href="#">コーラ</a></li>
+                                    <li><a href="#">ファンタ</a></li>
+                                    <li><a href="#">オレンジ</a></li>
+                                    <li><a href="#">アップル</a></li>
+                                    <li><a href="#">紅茶(Ice/Hot)</a></li>
+                                    <li><a href="#">コーヒー(Ice/Hot)</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="c-sidebar__menu p-sidebar--narrow__menu--drinks">
                             <li><a href="#">ドリンク</a>
                                 <ul>
                                     <li><a href="#">コーラ</a></li>
@@ -173,62 +243,45 @@
 
                     </div>
 
-                </div>
-
-                
-            
-                
+                </div> 
                     
             </sidebar>
+            
         </div>
         <footer class="l-footer p-footer">
+                    
             <ul class="p-footer__menu">
                 <li class="p-footer__menu--shop"><a href="#">ショップ情報</a></li>
                 <li class="p-footer__menu--history"><a href="#">ヒストリー</a></li>
 
             </ul>
             <address class="p-footer__copyright">Copyright: RaiseTech</address>
-
-
-
         </footer>
-
-    
-                
-
-    
         
-
-        
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
-            $(".p-main-left-header__btn").click(function(){
-                var wid = $(window).width();
-                if (wid <=1024) {
-                    $(".l-main__sidebar").toggleClass('active'); 
-                }
-            
-                   
-            });
-
-            $(".p-sidebar__close-btn").click(function(){
-                var wid = $(window).width();
-                if (wid <=1024) {
-                    $(".l-main__sidebar").removeClass('active');
-                   
-                }
-            });
-            $(window).on('load resize',function(){
-            var wid = $(window).width();
-                if(wid >=1025)  {
-                $(".l-main__sidebar").removeClass('active');
-                }
-            });
-    
-
-
-        </script>
-    </body> 
-
+            $("#p-main-header__btn").click(function(){
+                 var wid = $(window).width();
+                 if (wid <=1024) {
+                     $(".l-sidebar").toggleClass('active');
+                     $(".p-main").toggleClass('active');
+                 }   
+             });
+ 
+             $("#p-sidebar--narrow__close-btn").click(function(){
+                 var wid = $(window).width();
+                 if (wid <=1024) {
+                     $(".l-sidebar").removeClass('active');
+                     $(".p-main").removeClass('active');
+                 }
+             });
+             $(window).on('load resize',function(){
+             var wid = $(window).width();
+                 if(wid >=1025)  {
+                 $(".l-sidebar").removeClass('active');
+                 $(".p-main").removeClass('active');
+                 }
+             });   
+         </script>
+    </body>
 </html>

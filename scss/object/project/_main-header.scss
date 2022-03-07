@@ -1,10 +1,11 @@
 @import "../../foundation/mixin";
 //front-page
-.p-main-left{
+.p-main{
     width: 100%;
     text-align: center;
     @include breakpoint(pc){
         text-align: initial;
+        width: 80%;
         
     }
     
@@ -50,7 +51,6 @@
                 
             }
             .p-search-form__keyword{
-                position: relative;
                 height: 4.6rem;
                 width: 25rem;
                 background-color: #FFFFFF;
@@ -86,14 +86,14 @@
 
 
     }
-    @include breakpoint(pc){
-        width: 155.3rem;
+    
 
-    }
-
+}
+.p-main.active{
+    position: fixed;
 }
 
 
 
 
-//archive
+

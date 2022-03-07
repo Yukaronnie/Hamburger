@@ -2,27 +2,23 @@
 .c-card{
     margin-bottom: 2rem;
     &--pic{
-        background-size: cover;
-        height: 35vh;        
         @include breakpoint(tab){
-            width: 50%;
-            height: auto;
+            width: 50%;  
         }
         @include breakpoint(pc){
-            height: 45vh; 
+            
         }
+        
 
 
     }
     
     
-    &--bottom{
+    &--intro{
         padding: 2.3rem 1.7rem 4.5rem;
         background-color: #3C2B1C;
         color: #FFFFFF;
-        
-        
-        
+        height: auto;
         h3{
             font-size: 2rem;
             text-align: left;
@@ -47,9 +43,9 @@
             margin-right: 5.6rem;
         }
         @include breakpoint(tab){
-            width: 50%;
-            
+            width: 50%;  
         }
+        
 
     }
 @include breakpoint(tab){

@@ -2,21 +2,22 @@
 
 .p-access{
     position: relative;
+    background-color: black;
     height: auto;
     width: 100%;
-    background: black;
-    background-image: url(../../../images/front-page_map_img.png) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-   
+    
+    &__map{
+       
+        object-fit: cover;
+        width: 100%;
+        
+        
+    }
     &__text{
         background: linear-gradient(rgba(0, 0, 0, .29) 0%, rgba(0, 0, 0, .29) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
-        
-        @include breakpoint(tab){
-            background: none;
-            background-color:rgba(0, 0, 0, .29);
- 
-        }
+        position: absolute;          
+        top: 0;
+        left: 0;
         h2{
             font-family: 'M PLUS 1p', sans-serif;
             font-size: 3rem;
@@ -43,18 +44,18 @@
             width: 80%;
 
         }
+        @include breakpoint(tab){
+            background:rgba(0, 0, 0, .29)
+        }
         @include breakpoint(pc){
             width: 60%;
+            height: 100%;
         }
     }
     
+        
+        
     
-    @include breakpoint(tab){
-        background-image: url(../../../images/front-page_map_tab_img.png) ;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-
 }
+
 

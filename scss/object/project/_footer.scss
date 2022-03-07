@@ -1,10 +1,9 @@
 @import "../../foundation/mixin";
 .p-footer{
-    background-image: url(../../../images/front-page_footer_brown_img.png);
-    background-size: cover;
     color: #ffffff;
     text-align: center;
-    height: 15rem;
+    background-image: url(../../../images/front-page/front-page_footer_brown_img.png);
+    background-size: cover;
     
     &__menu{
     display: flex;

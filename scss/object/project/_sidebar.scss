@@ -1,34 +1,45 @@
 @import "../../foundation/mixin";
-.p-sidebar-close-btn{
-    cursor: pointer;
-    float: right;
-    width: 3.3rem;
-    height: 3.3rem;
-    margin: 1rem 1rem 0 0;
+
+.p-sidebar--narrow{
+    margin-left: 10%;
+    background-color: #F2EDE9;
+    color: #707070;
+    @include breakpoint(tab){
+        margin-left: 60%;
+    }
     @include breakpoint(pc){
-        display: none;
+        margin-left: 0;
     }
-    span{
-        display: block;
-        background-color: #707070;
-        width: .4rem;
+    &__close-btn{
+        cursor: pointer;
+        float: right;
+        width: 3.3rem;
         height: 3.3rem;
-
+        margin: 1rem 1rem 0 0;
+        @include breakpoint(pc){
+            display: none;
+        }
+        span{
+            display: block;
+            background-color: #707070;
+            width: .4rem;
+            height: 3.3rem;
+    
+        }
+        span:nth-of-type(1){
+            transform: translateX(1.45rem) rotate(45deg);
+    
+            
+        }
+        span:nth-of-type(2){
+            transform: translateX(1.45rem) translateY(-3.3rem) rotate(-45deg);
+            
+        }
+    
+    
     }
-    span:nth-of-type(1){
-        transform: translateX(1.45rem) rotate(45deg);
-
-        
-    }
-    span:nth-of-type(2){
-        transform: translateX(1.45rem) translateY(-3.3rem) rotate(-45deg);
-        
-    }
-
-
-}
-
-.p-sidebar{
+    
+    
     &__title{
         display: none;
         @include breakpoint(tab){

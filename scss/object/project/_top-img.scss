@@ -1,0 +1,77 @@
+@import "../../foundation/mixin";
+//front-pageの記述
+.p-top-img--front-page{
+    position: relative;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    img{
+        height: auto;
+        width: 100vw;
+    }
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 3rem;
+        color: #FFFFFF;
+        margin-left: 4rem;
+        @include breakpoint(tab){
+            font-size: 4rem;
+        }
+        
+
+    }
+    
+}
+//archiveの記述
+.p-top-img--archive{
+    position: relative;
+    background-color: #000000;
+    
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        font-size: 4rem;
+        margin-left: 4rem;
+        @include breakpoint(pc){
+            font-size: 6rem;
+        }
+        
+
+    }
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+}
+//singleの記述
+.p-top-img--single{
+    background: url(../../../images/single_top_img.png)no-repeat center center;
+    background-color: #000000;
+    background-size: cover;
+    height: 28.5rem;
+    align-items: center;
+    @include breakpoint(tab){
+        height: 50rem;
+        background: url(../../../images/single_top_tab_img.png)no-repeat center center;
+        background-size: cover;
+    }
+    @include breakpoint(pc){
+        background: url(../../../images/single_top_pc_img.png)no-repeat center center;
+        background-color: #000000;
+        background-size: cover;
+
+    }
+    h2{
+        color: #FFFFFF;
+        font-size: 4rem;
+        margin-left: 4rem;
+        
+
+    }
+}

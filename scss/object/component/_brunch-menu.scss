@@ -1,67 +1,78 @@
 @import "../../foundation/mixin";
 
 .c-brunch-menu{
-    position: relative;
     display: flex;
     justify-content: center;
-    @include breakpoint(tab){
-        width: 50%;
-    }
-    
-    h2{
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #EAEAEA;
-        font-size: 4.1rem;
-        padding: 1.1rem 0 0 1rem;
-        font-family:'Roboto';
-        
-    }
-    h2:after{
-        content: "";
-        display: block;
-        border-bottom: solid 0.4rem #FFFFFF;
-        padding-bottom: 1.9rem;
-        width: 3.3rem;
-    }
-    
-    &__square1, &__square2{
-        display: inline-block;
-        width: 90%;
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #3C2A10;
-        width: 31.4rem;
-        height: 16.3rem;
-        opacity: 0.8;
-        padding: 0 1rem;
-        
-        dt{
-            padding: 1.9rem 0;
-            font-size: 2.2rem;
-            font-family: 'M PLUS 1p';
-            text-align: left;
-            font-weight: bold;
+    &__pic{
+        position: relative;
+        img{
+            width: calc(100vw - 10vw);
+            @include breakpoint(tab){
+                width: calc(50vw - 6vw);
+                
+                }
+            @include breakpoint(pc){
+                width: calc(40vw - 5vw);
+                height: auto;
+                max-width: 550px;
+
+            }
+        }
+        h2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: #EAEAEA;
+            font-size: 4.1rem;
+            padding: 1.1rem 0 0 1rem;
+            font-family:'Roboto';
             
         }
-        dd{
-            font-size: 1.6rem;
+        h2:after{
+            content: "";
+            display: block;
+            border-bottom: solid 0.4rem #FFFFFF;
+            padding-bottom: 1.9rem;
+            width: 3.3rem;
+        }
+        
+        &__square1, &__square2{
+            display: inline-block;
+            height: auto;
+            width: calc(100% - 10%);
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #3C2A10;
+            opacity: 0.8;
+            padding: 0 1rem;
             font-family: 'M PLUS 1p';
             text-align: left;
-
+            dt{
+                padding: 1.9rem 0;
+                font-size: 2.2rem;
+                font-weight: bold;
+                
+            }
+            dd{
+                font-size: 1.6rem;
+            }
+        
         }
+        &__square1{
+            position: absolute;
+            top: 30%;
+            left: 5%;
+        }
+        &__square2{
+            position: absolute;
+            top: 60%;
+            left: 5%;
+        }
+        
+    }       
+    @include breakpoint(tab){
+        width: 50%;
+        
+    }
     
-    }
-    &__square1{
-        display: inline-block;
-        width: 90%;
-        position: absolute;
-        top: 29.7rem; 
-    }
-    &__square2{
-        display: inline-block;
-        width: 90%;
-        position: absolute;
-        top: 46.9rem;
-    }
+    
 }

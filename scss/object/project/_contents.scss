@@ -1,116 +1,16 @@
 @import "../../foundation/mixin";
-//front-page
-.p-top-img--front-page{
-    height: 28.5rem;
-    background: url(../../../images/front-page_top_img.png) no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    @include breakpoint(pc){
-        background: url(../../../images/front-page_top_pc_img.png) no-repeat center center;
-        background-size: cover;
-        height: 53em;
 
-    }
-    h2{
-        color: #FFFFFF;
-        font-size: 4rem;
-        margin-left: 4rem;
-        
-
-    }
+//front-pageの記述
+.p-contents__brunch-menu{
+    padding: calc(2rem + 2%) 2rem calc(2rem + 2%);
     
-}
-.p-top-img--archive{
-    background: url(../../../images/archive_top_img.png) no-repeat center center;
-    background-color: #000000;
-    background-size: cover;
-    height: 28.5rem;
-    display: flex;
-    align-items: center;
-    @include breakpoint(pc){
-        background: url(../../../images/archive_top_pc_img.png) no-repeat center center;
-        background-color: #000000;
-        height: 24rem;
-    }
-    h2{
-        color: #FFFFFF;
-        font-size: 4rem;
-        margin-left: 4rem;
-        
-
-    }
-}
-.p-top-img--single{
-    background: url(../../../images/single_top_img.png)no-repeat center center;
-    background-color: #000000;
-    background-size: cover;
-    height: 28.5rem;
-    display: flex;
-    align-items: center;
     @include breakpoint(tab){
-        height: 50rem;
-        background: url(../../../images/single_top_tab_img.png)no-repeat center center;
-        background-size: cover;
+        display: flex;
+        justify-content: space-between;
     }
-    @include breakpoint(pc){
-        background: url(../../../images/single_top_pc_img.png)no-repeat center center;
-        background-color: #000000;
-        background-size: cover;
-
-    }
-    h2{
-        color: #FFFFFF;
-        font-size: 4rem;
-        margin-left: 4rem;
-        
-
-    }
-}
-
-
-.p-brunch-menu{
-    
-    .p-brunch-menu__wrapper{
-        padding: 2rem 2rem 0;
-        .p-brunch-takeout{
-            height: 64.2rem;
-            background: url(../../../images/front-page_brunch_img1.png) no-repeat center center;
-            background-size: cover;
-            margin-bottom: 2rem;
-            @include breakpoint(tab){
-                margin-right: 2rem;
-            }
-            @include breakpoint(pc){
-                margin:3rem 2rem 6rem 3rem;
-            }
-        }
-        .p-brunch-eatin{
-            height: 64.2rem;
-            background: url(../../../images/front-page_brunch_img2.png) no-repeat center center;
-            background-size: cover;
-            margin-bottom: 2rem;
-            @include breakpoint(pc){
-                margin:3rem 3rem 6rem 2rem;
-            }
-
-        }
-        @include breakpoint(tab){
-            display: flex;
-        }
-        
-    }
-    
+ 
         
 }
-.p-menu--archive{
-    &--cheeseburger{
-        background-image: url(../../../images/archive_doublecheese-burger_img.png);
-        
-    }
-    
-}
-
 
 
 //archiveの記述
@@ -129,38 +29,26 @@
         margin-bottom: 2.2rem;
         
     }
+    &__menu{
+        &__card{
+        
+            &--cheeseburger{
+                img{
+                    width: 100%;
+                    height: auto;
+                    
+                }
+        
+            }
+        
+    
+        }
+    }
     @include breakpoint(pc){
         padding: 2.1rem 5rem 0;   
     }
 }
-.p-sidebar__close-btn{
-    cursor: pointer;
-    float: right;
-    width: 3.3rem;
-    height: 3.3rem;
-    margin: 1rem 1rem 0 0;
-    @include breakpoint(pc){
-        display: none;
-    }
-    span{
-        display: block;
-        background-color: #707070;
-        width: .4rem;
-        height: 3.3rem;
 
-    }
-    span:nth-of-type(1){
-        transform: translateX(1.45rem) rotate(45deg);
-
-        
-    }
-    span:nth-of-type(2){
-        transform: translateX(1.45rem) translateY(-3.3rem) rotate(-45deg);
-        
-    }
-
-
-}
 //singleの記述
 .p-contents--single{
     margin: 0 2rem;
@@ -213,19 +101,19 @@
     }
     &__menu{
         
-        &--top{
+        &__top{
             background-image: url(../../../images/single_article_top_img.png) ;
             width: 100%;
             height: auto;
             background-size: 100%;
             margin: 3rem 0;
         }
-        &--top::before{
+        &__top::before{
             display: block;
             content: "";
             padding-top: 38%;
         }
-        &--article{
+        &__article{
             li{
                 margin-bottom: 3rem;
                 display: flex;
@@ -241,7 +129,7 @@
                 }
 
             }
-            &--pic{
+            &__pic{
                 background-image: url(../../../images/single_article_img.png);
                 background-size: contain;
                 width: 44%;
@@ -264,7 +152,7 @@
             
 
         }
-        &--bottom{
+        &__bottom{
             background-image: url(../../../images/single_article_bottom_img.png);
             background-size: contain;
             background-position: center;
@@ -276,75 +164,76 @@
             }
         
         }
-        &--pictures{               
-            &--pic1{
-                margin-top: 2rem;
-                background-image: url(../../../images/single_menu_img.png);
-                height: auto;
-                width: 100%;
-                background-size: 100%;
-                @include breakpoint(tab){
-                    width: 49%;
-
-                }
-                @include breakpoint(pc){
-                    width: 32%;
-
-                }  
-            
-            }
-            &--pic1::before{
-                display: block;
-                content: "";
-                padding-top: 58%;
-            }
-            ul{
-                @include breakpoint(tab){
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    
-                    
-
-                } 
+        
+        &__picture{
+            margin-top: 2rem;
+            background-image: url(../../../images/single_menu_img.png);
+            height: auto;
+            width: 100%;
+            background-size: 100%;
+            @include breakpoint(tab){
+                width: 49%;
 
             }
+            @include breakpoint(pc){
+                width: 32%;
+
+            }  
+        
+        }
+        &__picture::before{
+            display: block;
+            content: "";
+            padding-top: 58%;
+        }
+        ul{
+            @include breakpoint(tab){
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                
+                
+
+            } 
+
+        }
    
             
-        }
+        
 
     }
-    &--lists{
+    &__lists{
         text-align: left;
         font-size: 1.6rem;
         color: #3C2A10;
-         &--list{
-                margin: 4rem 0;
-                ul{
-                    margin-bottom: 4rem;
-                    
-                }
-                ul:nth-of-type(2){
-                    margin-left: 3.8rem;
-                }
-        
-        }
+         
             
            
     }
-    &--space{
+    &__list{
+        margin: 4rem 0;
+        ul{
+            margin-bottom: 4rem;
+            
+        }
+        ul:nth-of-type(2){
+            margin-left: 3.8rem;
+        }
+
+    }
+    &__space{
         background-color: #F5F5F5;
         width: 100%;
         height: 23.7rem;
     }
-    &--space::before{
+    &__space::before{
         display: block;
         content: "";
         padding-top: 70%;
        
     }
 
-    &--table{
+    &__table{
         color: #707070;
         border-collapse: collapse;
         margin-top: 3rem;
@@ -369,7 +258,7 @@
         
         
     }
-    &--btn{
+    &__btn{
         height: 8rem;
         width: 33.5rem;
         color: #3C2A10;
@@ -380,7 +269,7 @@
         border:bold .2rem #707070;
         margin: 2rem 0;
     }
-    &--bold{
+    &__bold{
         text-align: left;
         font-size: 1.6rem;
         font-weight: bold;
@@ -390,35 +279,7 @@
 }
 
 
-//sidebarの記述
-.p-sidebar{
-    &__title{
-        display: none;
-        @include breakpoint(tab){
-            display: none;
-        }
-        
-        @include breakpoint(pc){
-            display: block;
-            color: #707070;
-            font-size: 2.5rem;
-            margin-left: 4.6rem;
-            padding-top: 6rem;
-            font-weight: bold;
 
-            
-        }
-    }
-    &__menu{
-        margin-left: 4.6rem;
-        padding-top: 19rem;
-        @include breakpoint(pc){
-            padding-top: 6rem;
-        }
-        
-    }
-
-}
 
 
 
