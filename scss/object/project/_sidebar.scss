@@ -2,6 +2,7 @@
 
 .p-sidebar--narrow{
     margin-left: 10%;
+    height: 100%;
     background-color: #F2EDE9;
     color: #707070;
     @include breakpoint(tab){

@@ -1,27 +1,31 @@
 @import "../../foundation/mixin";
 
 .c-brunch-menu{
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: calc(1px + 2%);
+    
     &__pic{
         position: relative;
+        display: inline-block;
+        max-width: 700px;
+        
         img{
             width: calc(100vw - 10vw);
             @include breakpoint(tab){
                 width: calc(50vw - 6vw);
                 
-                }
+            }
             @include breakpoint(pc){
                 width: calc(40vw - 5vw);
-                height: auto;
-                max-width: 550px;
+                max-width: 700px;
 
             }
         }
         h2{
             position: absolute;
-            top: 0;
-            left: 0;
+            top: 1%;
+            left: 2%;
             color: #EAEAEA;
             font-size: 4.1rem;
             padding: 1.1rem 0 0 1rem;
@@ -35,17 +39,27 @@
             padding-bottom: 1.9rem;
             width: 3.3rem;
         }
+        &__squares{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 10px;
+            left: 5%;
+            width: calc(100% - 10%);
+            font-family: 'M PLUS 1p';
+            text-align: left;
+
+        }
         
-        &__square1, &__square2{
+        &__square{
             display: inline-block;
             height: auto;
-            width: calc(100% - 10%);
             background-color: rgba(255, 255, 255, 0.8);
             color: #3C2A10;
             opacity: 0.8;
             padding: 0 1rem;
-            font-family: 'M PLUS 1p';
-            text-align: left;
+            margin-bottom: 10px;
+            
             dt{
                 padding: 1.9rem 0;
                 font-size: 2.2rem;
@@ -57,16 +71,7 @@
             }
         
         }
-        &__square1{
-            position: absolute;
-            top: 30%;
-            left: 5%;
-        }
-        &__square2{
-            position: absolute;
-            top: 60%;
-            left: 5%;
-        }
+        
         
     }       
     @include breakpoint(tab){

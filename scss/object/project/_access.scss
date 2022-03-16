@@ -1,23 +1,30 @@
 @import "../../foundation/mixin";
 
 .p-access{
-    position: relative;
+    background-image: url(../../../images/front-page/front-page_map_img.png);
+    background-size: cover;
+    background-position: center center;
     background-color: black;
     height: auto;
     width: 100%;
     
-    &__map{
-       
-        object-fit: cover;
-        width: 100%;
-        
+    @include breakpoint(tab){
+        background-image: url(../../../images/front-page/front-page_map_tab_img.png);
         
     }
+    @include breakpoint(pc){
+        background-image: url(../../../images/front-page/front-page_map_pc_img.png);
+        
+    }
+
+    
+    /*&__map{  
+        object-fit: cover;
+        width: 100%;  
+    }*/
     &__text{
         background: linear-gradient(rgba(0, 0, 0, .29) 0%, rgba(0, 0, 0, .29) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
-        position: absolute;          
-        top: 0;
-        left: 0;
+        
         h2{
             font-family: 'M PLUS 1p', sans-serif;
             font-size: 3rem;
@@ -52,10 +59,10 @@
             height: 100%;
         }
     }
-    
-        
-        
+      
     
 }
+
+
 
 

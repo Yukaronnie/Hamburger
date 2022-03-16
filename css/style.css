@@ -35,7 +35,7 @@ a {
   overflow-y: scroll;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 100%;
@@ -78,12 +78,15 @@ a {
 }
 
 .c-brunch-menu {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: calc(1px + 2%);
 }
 
 .c-brunch-menu__pic {
   position: relative;
+  display: inline-block;
+  max-width: 700px;
 }
 
 .c-brunch-menu__pic img {
@@ -99,15 +102,14 @@ a {
 @media only screen and (min-width: 1025px) {
   .c-brunch-menu__pic img {
     width: calc(40vw - 5vw);
-    height: auto;
-    max-width: 550px;
+    max-width: 700px;
   }
 }
 
 .c-brunch-menu__pic h2 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1%;
+  left: 2%;
   color: #EAEAEA;
   font-size: 4.1rem;
   padding: 1.1rem 0 0 1rem;
@@ -122,38 +124,35 @@ a {
   width: 3.3rem;
 }
 
-.c-brunch-menu__pic__square1, .c-brunch-menu__pic__square2 {
-  display: inline-block;
-  height: auto;
+.c-brunch-menu__pic__squares {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
   width: calc(100% - 10%);
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #3C2A10;
-  opacity: 0.8;
-  padding: 0 1rem;
   font-family: 'M PLUS 1p';
   text-align: left;
 }
 
-.c-brunch-menu__pic__square1 dt, .c-brunch-menu__pic__square2 dt {
+.c-brunch-menu__pic__square {
+  display: inline-block;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #3C2A10;
+  opacity: 0.8;
+  padding: 0 1rem;
+  margin-bottom: 10px;
+}
+
+.c-brunch-menu__pic__square dt {
   padding: 1.9rem 0;
   font-size: 2.2rem;
   font-weight: bold;
 }
 
-.c-brunch-menu__pic__square1 dd, .c-brunch-menu__pic__square2 dd {
+.c-brunch-menu__pic__square dd {
   font-size: 1.6rem;
-}
-
-.c-brunch-menu__pic__square1 {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-}
-
-.c-brunch-menu__pic__square2 {
-  position: absolute;
-  top: 60%;
-  left: 5%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -241,22 +240,32 @@ a {
 
 /*object-project*/
 .p-access {
-  position: relative;
+  background-image: url(../../../images/front-page/front-page_map_img.png);
+  background-size: cover;
+  background-position: center center;
   background-color: black;
   height: auto;
   width: 100%;
+  /*&__map{  
+        object-fit: cover;
+        width: 100%;  
+    }*/
 }
 
-.p-access__map {
-  object-fit: cover;
-  width: 100%;
+@media only screen and (min-width: 600px) {
+  .p-access {
+    background-image: url(../../../images/front-page/front-page_map_tab_img.png);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .p-access {
+    background-image: url(../../../images/front-page/front-page_map_pc_img.png);
+  }
 }
 
 .p-access__text {
   background: linear-gradient(rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.29) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .p-access__text h2 {
@@ -300,7 +309,7 @@ a {
 }
 
 .p-contents__brunch-menu {
-  padding: calc(2rem + 2%) 2rem calc(2rem + 2%);
+  padding: calc(1px + 2%) calc(1px + 2%) 0;
 }
 
 @media only screen and (min-width: 600px) {
@@ -712,6 +721,7 @@ a {
 
 .p-sidebar--narrow {
   margin-left: 10%;
+  height: 100%;
   background-color: #F2EDE9;
   color: #707070;
 }

@@ -2,7 +2,7 @@
 
 //front-pageの記述
 .p-contents__brunch-menu{
-    padding: calc(2rem + 2%) 2rem calc(2rem + 2%);
+    padding: calc(1px + 2%) calc(1px + 2%) 0;
     
     @include breakpoint(tab){
         display: flex;
