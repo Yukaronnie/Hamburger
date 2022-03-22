@@ -18,11 +18,11 @@
         }
         &__btn{
             font-weight: bold;
-            font-size: 2rem;
+            font-size: 20px;
             float: right;    
             color: #707070;
             font-family: 'Roboto';
-            margin: 1.4rem 1.4rem 0 0;
+            margin: 14px 14px 0 0;
             
             @include breakpoint(pc){
             display: none;
@@ -31,50 +31,51 @@
             
         }
         h1{
-            font-size: 4rem;
+            font-size: 40px;
             font-family: 'Roboto';
             color: #707070;
-            margin: 3.9rem 0 3.9rem 0;
+            margin: 39px 0 39px 0;
             clear: both;
             @include breakpoint(pc){
-                padding-left: 2rem;
+                padding-left: 20px;
                 
             }
             
             
         }
         .p-search-form{
+            padding-bottom: 30px;
             @include breakpoint(pc){
                 display: flex;
                 align-items: center;
-                padding-right: 2rem;
+                padding-right: 20px;
+                padding-bottom: 0;
                 
             }
             .p-search-form__keyword{
-                height: 4.6rem;
-                width: 25rem;
+                height: 46px;
+                width: 250px;
                 background-color: #FFFFFF;
-                border: solid .1rem #707070;
-                border-radius: 1rem;
-                margin-right: 1rem;
+                border: solid 1px #707070;
+                border-radius: 10px;
+                margin-right: 10px;
                 color: #707070;
-                margin-bottom: 3.9rem;
-                @include breakpoint(pc){
-                    transform: translateY(45%);
-                }
+                vertical-align: top;
+            
             
             }
             
             
             .p-search-form__submit{
-                height: 4.6rem;
-                width: 7.8rem;
+                height: 46px;
+                width: 78px;
                 background: linear-gradient(#F2EDE9, #DED8D3);
-                border: solid .1rem #707070;
-                border-radius: 1rem;
+                border: solid 1px #707070;
+                border-radius: 10px;
                 font-family: 'M PLUS 1p', sans-serif;
                 color: #707070;
-                font-size: 1.6rem;
+                font-size: 16px;
+                vertical-align: top;
                 
             
             }

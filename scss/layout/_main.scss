@@ -1,6 +1,6 @@
 @import "../foundation/mixin";
 .l-main{
-
+    overflow-y: hidden;
     @include breakpoint(pc){
     display: flex;
 

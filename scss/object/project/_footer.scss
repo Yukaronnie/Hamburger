@@ -8,34 +8,34 @@
     &__menu{
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 40px;
         li{
-            font-size: 2rem;
+            font-size: 20px;
         }
         &--shop{
-            margin-right: 1.5rem;
+            margin-right: 15px;
         }
         &--history{
             position: relative;
-            margin-left: 1.5rem;
+            margin-left: 15px;
                 
             }
             &--history:before{
                 position: absolute;
                 content: "";
-                width: .2rem;
+                width: 2px;
                 right: 100%;
                 background-color: #FFFFFF;
-                height: 2rem;
-                margin: 0 1.4rem;
-                top: .5rem;
+                height: 20px;
+                margin: 0 14px;
+                top: 5px;
 
 
             }
         }
     &__copyright{
-        font-size: 1.4rem;
-        padding-top: 3.4rem;
+        font-size: 14px;
+        padding: 30px 0;
     
     }
 

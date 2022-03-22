@@ -2,7 +2,8 @@
 
 .p-sidebar--narrow{
     margin-left: 10%;
-    height: 100%;
+    padding-bottom: 32768px;
+	margin-bottom: -32768px;
     background-color: #F2EDE9;
     color: #707070;
     @include breakpoint(tab){
@@ -14,26 +15,26 @@
     &__close-btn{
         cursor: pointer;
         float: right;
-        width: 3.3rem;
-        height: 3.3rem;
-        margin: 1rem 1rem 0 0;
+        width: 33px;
+        height: 33px;
+        margin: 10px 10px 0 0;
         @include breakpoint(pc){
             display: none;
         }
         span{
             display: block;
             background-color: #707070;
-            width: .4rem;
-            height: 3.3rem;
+            width: 4px;
+            height: 33px;
     
         }
         span:nth-of-type(1){
-            transform: translateX(1.45rem) rotate(45deg);
+            transform: translateX(14.5px) rotate(45deg);
     
             
         }
         span:nth-of-type(2){
-            transform: translateX(1.45rem) translateY(-3.3rem) rotate(-45deg);
+            transform: translateX(14.5px) translateY(-33px) rotate(-45deg);
             
         }
     
@@ -50,19 +51,19 @@
         @include breakpoint(pc){
             display: block;
             color: #707070;
-            font-size: 2.5rem;
-            margin-left: 4.6rem;
-            padding-top: 6rem;
+            font-size: 25px;
+            margin-left: 46px;
+            padding-top: 60px;
             font-weight: bold;
 
             
         }
     }
     &__menu{
-        margin-left: 4.6rem;
-        padding-top: 19rem;
+        margin-left: 46px;
+        padding-top: 190px;
         @include breakpoint(pc){
-            padding-top: 6rem;
+            padding-top: 60px;
         }
         
     }

@@ -1,23 +1,26 @@
 @import "../../foundation/mixin";
+
+.p-top-img--front-page, .p-top-img--archive, .p-top-img--single, .p-top-img--page{
+    height: auto;
+    width: 100%;
+}
 //front-pageの記述
 .p-top-img--front-page{
     position: relative;
-    height: auto;
-    width: 100%;
     align-items: center;
     img{
         height: auto;
-        width: 100vw;
+        width: 100%;
     }
     h2{
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 3rem;
+        font-size: 30px;
         color: #FFFFFF;
-        margin-left: 4rem;
+        margin-left: 40px;
         @include breakpoint(tab){
-            font-size: 4rem;
+            font-size: 40px;
         }
         
 
@@ -34,10 +37,10 @@
         top: 50%;
         transform: translateY(-50%);
         color: #FFFFFF;
-        font-size: 4rem;
-        margin-left: 4rem;
+        font-size: 40px;
+        margin-left: 40px;
         @include breakpoint(pc){
-            font-size: 6rem;
+            font-size: 60px;
         }
         
 
@@ -51,27 +54,44 @@
 }
 //singleの記述
 .p-top-img--single{
-    background: url(../../../images/single_top_img.png)no-repeat center center;
+    position: relative;
     background-color: #000000;
-    background-size: cover;
-    height: 28.5rem;
     align-items: center;
-    @include breakpoint(tab){
-        height: 50rem;
-        background: url(../../../images/single_top_tab_img.png)no-repeat center center;
-        background-size: cover;
+    
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        font-size: 40px;
+        margin-left: 40px;
     }
-    @include breakpoint(pc){
-        background: url(../../../images/single_top_pc_img.png)no-repeat center center;
-        background-color: #000000;
-        background-size: cover;
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
 
     }
+}
+
+//pageの記述
+.p-top-img--page{
+    position: relative;
+    background-color: #000000;
+    align-items: center;
+    
     h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
         color: #FFFFFF;
-        font-size: 4rem;
-        margin-left: 4rem;
-        
+        font-size: 40px;
+        margin-left: 40px;
+    }
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
 
     }
 }
