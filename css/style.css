@@ -481,6 +481,12 @@ a {
   width: 100%;
 }
 
+.p-contents--single__menu__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media only screen and (min-width: 600px) {
   .p-contents--single__menu__picture {
     width: 49%;
@@ -917,6 +923,8 @@ a {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 700px;
+  object-fit: cover;
 }
 
 .p-top-img--page {
@@ -938,6 +946,8 @@ a {
   display: block;
   width: 100%;
   height: auto;
+  max-height: 700px;
+  object-fit: cover;
 }
 
 /*object-utility*/
