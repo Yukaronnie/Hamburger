@@ -1,0 +1,71 @@
+@use "../../scss/global" as g;
+
+.p-sidebar{
+    margin-left: 10%;
+    padding-bottom: 32768px;
+	margin-bottom: -32768px;
+    background-color: #F2EDE9;
+    color: #707070;
+    @include g.breakpoint(tab){
+        margin-left: 60%;
+    }
+    @include g.breakpoint(pc){
+        margin-left: 0;
+    }
+    &__close-btn{
+        cursor: pointer;
+        float: right;
+        width: 33px;
+        height: 33px;
+        margin: 10px 10px 0 0;
+        @include g.breakpoint(pc){
+            display: none;
+        }
+        span{
+            display: block;
+            background-color: #707070;
+            width: 4px;
+            height: 33px;
+    
+        }
+        span:nth-of-type(1){
+            transform: translateX(14.5px) rotate(45deg);
+    
+            
+        }
+        span:nth-of-type(2){
+            transform: translateX(14.5px) translateY(-33px) rotate(-45deg);
+            
+        }
+    
+    
+    }
+    
+    
+    &__title{
+        display: none;
+        @include g.breakpoint(tab){
+            display: none;
+        }
+        
+        @include g.breakpoint(pc){
+            display: block;
+            color: #707070;
+            font-size: 25px;
+            margin-left: 46px;
+            padding-top: 60px;
+            font-weight: bold;
+
+            
+        }
+    }
+    &__menu{
+        margin-left: 46px;
+        padding-top: 190px;
+        @include g.breakpoint(pc){
+            padding-top: 60px;
+        }
+        
+    }
+
+}

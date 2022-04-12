@@ -1,0 +1,100 @@
+@use "../../scss/global" as g;
+//front-page
+.p-main{
+    width: 100%;
+    text-align: center;
+    @include g.breakpoint(pc){
+        text-align: initial;
+        width: 80%;
+        
+    }
+    
+
+    &-header{
+        background-color: #FFF7EF;
+        @include g.breakpoint(pc){
+            display: flex;
+            justify-content: space-between;
+        }
+        &__btn{
+            font-weight: bold;
+            font-size: 20px;
+            float: right;    
+            color: #707070;
+            font-family: 'Roboto';
+            margin: 14px 14px 0 0;
+            
+            @include g.breakpoint(pc){
+            display: none;
+        }
+        
+            
+        }
+        h1{
+            font-size: 40px;
+            font-family: 'Roboto';
+            color: #707070;
+            margin: 39px 0 39px 0;
+            clear: both;
+            @include g.breakpoint(pc){
+                padding-left: 20px;
+                
+            }
+            
+            
+        }
+        .p-search-form{
+            padding-bottom: 30px;
+            @include g.breakpoint(pc){
+                display: flex;
+                align-items: center;
+                padding-right: 20px;
+                padding-bottom: 0;
+                
+            }
+            .p-search-form__keyword{
+                height: 46px;
+                width: 250px;
+                background-color: #FFFFFF;
+                border: solid 1px #707070;
+                border-radius: 10px;
+                margin-right: 10px;
+                color: #707070;
+                vertical-align: top;
+            
+            
+            }
+            
+            
+            .p-search-form__submit{
+                height: 46px;
+                width: 78px;
+                background: linear-gradient(#F2EDE9, #DED8D3);
+                border: solid 1px #707070;
+                border-radius: 10px;
+                font-family: 'M PLUS 1p', sans-serif;
+                color: #707070;
+                font-size: 16px;
+                vertical-align: top;
+                
+            
+            }
+
+        }
+        
+        
+        
+
+
+    }
+    
+
+}
+.p-main.active{
+    position: fixed;
+}
+
+
+
+
+

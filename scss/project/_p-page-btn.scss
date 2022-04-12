@@ -1,0 +1,69 @@
+@use "../../scss/global" as g;
+.p-page-btn{
+    height: 114px;
+    padding: 61px 20px 31px;
+    font-size: 16px;
+    color: #707070;
+    display: flex;
+    justify-content: space-between;
+    
+    @include g.breakpoint(tab){
+        
+        align-items: center;
+        justify-content: center;
+
+    }
+    &--num{
+        display: none;
+
+        @include g.breakpoint(tab){
+            width: 30px;
+            height: 30px;
+            border:solid #707070 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+        }
+        a{
+            @include g.breakpoint(tab){
+                display: block;
+                font-family: 'Roboto', sans-serif;
+
+            }
+        
+            
+           
+        }
+    }
+    &--num:nth-of-type(3){
+        @include g.breakpoint(tab){
+            margin-left: 15px;
+        }
+
+    }
+    &--num:hover{
+        @include g.breakpoint(tab){
+        background-color: #3C2B1C;
+        color: #FFFFFF;
+        }
+    
+    }  
+    
+    &--prev{
+        transform: translateX(-21vw);
+        @include g.breakpoint(tab){
+            display: none;
+        }
+
+    }
+    &--next{
+        transform: translateX(21vw);
+        @include g.breakpoint(tab){
+            display: none;
+        }
+
+    }
+        
+ 
+}

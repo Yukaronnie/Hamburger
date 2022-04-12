@@ -1,0 +1,28 @@
+//foundation
+@use "foundation/f-base";
+
+//layout
+@use "layout/l-container";
+@use "layout/l-footer";
+@use "layout/l-header";
+@use "layout/l-main";
+@use "layout/l-sidebar";
+
+//component
+@use "component/c-brunch-menu";
+@use "component/c-button";
+@use "component/c-card";
+@use "component/c-sidebar";
+
+//project
+@use "project/p-access";
+@use "project/p-contents";
+@use "project/p-footer";
+@use "project/p-main-header";
+@use "project/p-page-btn";
+@use "project/p-sidebar";
+@use "project/p-top-img";
+
+
+
+

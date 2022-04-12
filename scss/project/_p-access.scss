@@ -1,0 +1,62 @@
+@use "../../scss/global" as g;
+.p-access{
+    background-image: url(../../../images/front-page/front-page_map_img.png);
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    
+    @include g.breakpoint(tab){
+        background-image: url(../../../images/front-page/front-page_map_tab_img.png);
+        
+    }
+    @include g.breakpoint(pc){
+        background-image: url(../../../images/front-page/front-page_map_pc_img.png);
+        
+    }
+
+    &__text{
+        background: linear-gradient(rgba(0, 0, 0, .29) 0%, rgba(0, 0, 0, .29) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+        
+        h2{
+            font-family: 'M PLUS 1p', sans-serif;
+            font-size: 30px;
+            color: #FFFFFF;
+            text-align: left;
+            margin-left: 10%;
+            padding-top: 40px;
+            
+        }
+        h2::after{
+            content: "";
+            display: block;
+            border-bottom: solid 2px #FFFFFF;
+            padding-bottom: 20px;
+            width: 75px;
+        }
+        p{
+            margin: 0 auto;
+            padding: 20px 0;
+            font-size: 14px;
+            font-family: 'M PLUS 1p', sans-serif;
+            color: #FFFFFF;
+            line-height: 2.3;
+            width: 80%;
+
+        }
+        @include g.breakpoint(tab){
+            background:rgba(0, 0, 0, .29)
+        }
+        @include g.breakpoint(pc){
+            width: 60%;
+            height: 100%;
+        }
+    }
+      
+    
+}
+
+
+
+

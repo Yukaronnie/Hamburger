@@ -1,0 +1,13 @@
+@use "../../scss/global" as g;
+
+.l-main{
+    overflow-y: hidden;
+    @include g.breakpoint(pc){
+    display: flex;
+
+    }
+}
+
+
+
+

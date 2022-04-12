@@ -1,0 +1,135 @@
+@use "../../scss/global" as g;
+
+.p-top-img--front-page, .p-top-img--archive, .p-top-img--single, .p-top-img--page{
+    height: auto;
+    width: 100%;
+}
+//front-pageの記述
+.p-top-img--front-page{
+    position: relative;
+    align-items: center;
+
+    img{
+        height: auto;
+        width: 100%;
+    }
+    &--tab,&--pc{
+        display: none;
+    }
+    @include g.breakpoint(tab){
+        &--sp,&--pc{
+            display: none;
+        }
+        &--tab{
+            display: block;
+        }
+    }
+    @include g.breakpoint(pc){
+        &--sp,&--tab{
+            display: none;
+        }
+        &--pc{
+            display: block;
+        }
+    }
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: #FFFFFF;
+        margin-left: 40px;
+        @include g.breakpoint(tab){
+            font-size: 40px;
+        }
+    }
+    
+}
+//archiveの記述
+.p-top-img--archive{
+    position: relative;
+    background-color: #000000;
+    
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        font-size: 40px;
+        margin-left: 40px;
+        @include g.breakpoint(pc){
+            font-size: 60px;
+        }
+        
+
+    }
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+}
+//singleの記述
+.p-top-img--single{
+    position: relative;
+    background-color: #000000;
+    align-items: center;
+    
+    img{ 
+        width: 100%;
+        object-fit: cover;
+    }
+    &--tab,&--pc{
+        display: none;
+    }
+    @include g.breakpoint(tab){
+        &--sp,&--pc{
+            display: none;
+        }
+        &--tab{
+            display: block;
+        }
+    }
+    @include g.breakpoint(pc){
+        &--sp,&--tab{
+            display: none;
+        }
+        &--pc{
+            display: block;
+        }
+    }
+    
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        font-size: 40px;
+        margin-left: 40px;
+    }
+}
+
+//pageの記述
+.p-top-img--page{
+    position: relative;
+    background-color: #000000;
+    align-items: center;
+    
+    h2{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #FFFFFF;
+        font-size: 40px;
+        margin-left: 40px;
+    }
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 700px;
+        object-fit: cover;
+        
+    }
+}

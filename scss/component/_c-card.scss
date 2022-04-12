@@ -1,0 +1,74 @@
+@use "../../scss/global/index" as g;
+.c-card{
+    margin-bottom: 20px;
+    
+    &--pic{
+        &--tab,&--pc{
+            display: none;
+        }
+        @include g.breakpoint(tab){
+            width: 50%;  
+            &--sp,&--pc{
+                display: none;
+            }
+            &--tab{
+                display: block;
+            }
+        }
+        @include g.breakpoint(pc){
+            &--sp,&--tab{
+                display: none;
+            }
+            &--pc{
+                display: block;
+            }
+        }
+
+    }
+    @include g.breakpoint(tab){
+        height: 500px; 
+    }
+    
+    
+    &--intro{
+        position: relative;
+        padding: 23px 17px 45px;
+        background-color: #3C2B1C;
+        color: #FFFFFF;
+        height: auto;
+        h3{
+            font-size: 20px;
+            text-align: left;
+            margin: 23px 0 23px;
+            @include g.breakpoint(pc){
+                font-size: 36px;
+            }
+
+        }
+        h4{
+            font-size: 16px;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 10px;
+            @include g.breakpoint(pc){
+                font-size: 24px;
+            }
+        }
+        p{
+            font-size: 16px;
+            text-align: left;
+            margin-right: 56px;
+        }
+        @include g.breakpoint(tab){
+            width: 50%;  
+        }
+        
+
+    }
+    
+@include g.breakpoint(tab){
+    display: flex;
+
+}
+
+}

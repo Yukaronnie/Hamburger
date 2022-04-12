@@ -1,0 +1,25 @@
+@use "../../scss/global/index" as g;
+.c-sidebar__menu{
+   
+    > li{
+        font-size: 15px;
+        > a{
+            font-weight: bold;
+        }
+
+        ul{
+            font-size: 12px;
+            padding: 10px 0 28px 15px;
+
+            li{
+                margin-top: 23px;
+                
+                
+            }
+            
+        }
+        
+    }
+
+
+}
