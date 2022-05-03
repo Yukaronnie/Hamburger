@@ -24,7 +24,6 @@ a {
 }
 
 .l-container {
-  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -42,9 +41,11 @@ a {
 }
 
 .l-footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
+}
+
+.l-footer.active {
+  display: none;
 }
 
 .l-main {
@@ -60,9 +61,6 @@ a {
   overflow-y: scroll;
   top: 0;
   width: 100%;
-  height: 100%;
-  padding-bottom: 32768px;
-  margin-bottom: -32768px;
   position: fixed;
   left: 100%;
   transition: all 0.6s;
@@ -79,6 +77,7 @@ a {
   left: 0;
   z-index: 10;
   transition: all 0.6s;
+  height: 100%;
 }
 
 .c-brunch-menu {
@@ -673,6 +672,8 @@ a {
   }
 }
 .p-main-header .p-search-form {
+  display: flex;
+  justify-content: center;
   padding-bottom: 30px;
 }
 @media only screen and (min-width: 1025px) {
@@ -683,15 +684,30 @@ a {
     padding-bottom: 0;
   }
 }
-.p-main-header .p-search-form .p-search-form__keyword {
+.p-main-header .p-search-form .p-search-form__box {
+  position: relative;
+  font-size: 16px;
+}
+.p-main-header .p-search-form .p-search-form__box__keyword {
   height: 46px;
   width: 250px;
+  padding-left: 40px;
   background-color: #FFFFFF;
   border: solid 1px #707070;
   border-radius: 10px;
   margin-right: 10px;
   color: #707070;
   vertical-align: top;
+}
+.p-main-header .p-search-form .p-search-form__box::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: url(/images/magnifying-glass.svg) no-repeat center center;
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 .p-main-header .p-search-form .p-search-form__submit {
   height: 46px;
@@ -773,10 +789,9 @@ a {
 
 .p-sidebar {
   margin-left: 10%;
-  padding-bottom: 32768px;
-  margin-bottom: -32768px;
   background-color: #F2EDE9;
   color: #707070;
+  height: 100%;
 }
 @media only screen and (min-width: 600px) {
   .p-sidebar {
@@ -838,6 +853,10 @@ a {
   .p-sidebar__menu {
     padding-top: 60px;
   }
+}
+
+.p-sidebar.active {
+  height: auto;
 }
 
 .p-top-img--front-page, .p-top-img--archive, .p-top-img--single, .p-top-img--page {

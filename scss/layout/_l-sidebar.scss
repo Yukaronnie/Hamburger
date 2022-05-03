@@ -1,16 +1,13 @@
-@use "../../scss/global" as g;
+@use "../foundation/index" as f;
 
 .l-sidebar{
     overflow-y: scroll;
     top: 0;
     width: 100%;
-    height: 100%;
-    padding-bottom: 32768px;
-	margin-bottom: -32768px;
     position: fixed;
     left: 100%;
     transition: all .6s;
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         width: 20%;
         position: static;
         overflow-y: hidden;
@@ -22,5 +19,6 @@
     left: 0;
     z-index: 10;
     transition: all .6s;
+    height: 100%;
     
 }

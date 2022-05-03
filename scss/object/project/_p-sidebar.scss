@@ -1,15 +1,14 @@
-@use "../../scss/global" as g;
+@use "../../../scss/foundation/index" as f;
 
 .p-sidebar{
     margin-left: 10%;
-    padding-bottom: 32768px;
-	margin-bottom: -32768px;
     background-color: #F2EDE9;
     color: #707070;
-    @include g.breakpoint(tab){
+    height: 100%;
+    @include f.breakpoint(tab){
         margin-left: 60%;
     }
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         margin-left: 0;
     }
     &__close-btn{
@@ -18,7 +17,7 @@
         width: 33px;
         height: 33px;
         margin: 10px 10px 0 0;
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             display: none;
         }
         span{
@@ -42,13 +41,14 @@
     }
     
     
+    
     &__title{
         display: none;
-        @include g.breakpoint(tab){
+        @include f.breakpoint(tab){
             display: none;
         }
         
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             display: block;
             color: #707070;
             font-size: 25px;
@@ -62,10 +62,13 @@
     &__menu{
         margin-left: 46px;
         padding-top: 190px;
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             padding-top: 60px;
         }
         
     }
 
+}
+.p-sidebar.active{
+    height: auto;
 }

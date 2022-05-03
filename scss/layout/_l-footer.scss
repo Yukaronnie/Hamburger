@@ -1,8 +1,9 @@
-@use "../../scss/global" as g;
+@use "../foundation/index" as f;
 .l-footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
     
+}
+.l-footer.active{
+    display: none;
 }
 

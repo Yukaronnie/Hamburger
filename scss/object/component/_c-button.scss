@@ -1,4 +1,4 @@
-@use "../../scss/global/index" as g;
+@use "../../../scss/foundation/index" as f;
 .c-btn--archive{
     display: block;
     margin: 0 auto;
@@ -9,13 +9,13 @@
     font-size: 16px;
     border-radius: 50px;
     margin-top: 40px;
-    @include g.breakpoint(tab){
+    @include f.breakpoint(tab){
         position: absolute;
         bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
     }
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         width: 202px;
         height: 55px;
         margin-top: 70px;

@@ -1,4 +1,4 @@
-@use "../../scss/global/index" as g;
+@use "../../../scss/foundation/index" as f;
 
 .c-brunch-menu{
     display: inline-block;
@@ -12,11 +12,11 @@
         
         img{
             width: calc(100vw - 10vw);
-            @include g.breakpoint(tab){
+            @include f.breakpoint(tab){
                 width: calc(50vw - 6vw);
                 
             }
-            @include g.breakpoint(pc){
+            @include f.breakpoint(pc){
                 width: calc(40vw - 5vw);
                 max-width: 700px;
 
@@ -74,7 +74,7 @@
         
         
     }       
-    @include g.breakpoint(tab){
+    @include f.breakpoint(tab){
         width: 50%;
         
     }

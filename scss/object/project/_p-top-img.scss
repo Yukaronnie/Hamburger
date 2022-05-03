@@ -1,4 +1,4 @@
-@use "../../scss/global" as g;
+@use "../../../scss/foundation/index" as f;
 
 .p-top-img--front-page, .p-top-img--archive, .p-top-img--single, .p-top-img--page{
     height: auto;
@@ -16,7 +16,7 @@
     &--tab,&--pc{
         display: none;
     }
-    @include g.breakpoint(tab){
+    @include f.breakpoint(tab){
         &--sp,&--pc{
             display: none;
         }
@@ -24,7 +24,7 @@
             display: block;
         }
     }
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         &--sp,&--tab{
             display: none;
         }
@@ -39,7 +39,7 @@
         font-size: 30px;
         color: #FFFFFF;
         margin-left: 40px;
-        @include g.breakpoint(tab){
+        @include f.breakpoint(tab){
             font-size: 40px;
         }
     }
@@ -57,7 +57,7 @@
         color: #FFFFFF;
         font-size: 40px;
         margin-left: 40px;
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             font-size: 60px;
         }
         
@@ -83,7 +83,7 @@
     &--tab,&--pc{
         display: none;
     }
-    @include g.breakpoint(tab){
+    @include f.breakpoint(tab){
         &--sp,&--pc{
             display: none;
         }
@@ -91,7 +91,7 @@
             display: block;
         }
     }
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         &--sp,&--tab{
             display: none;
         }

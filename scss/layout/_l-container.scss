@@ -1,6 +1,5 @@
-@use "../../scss/global" as g;
+@use "../foundation/index" as f;
 .l-container{
-    position: relative;
     display: flex;
     flex-direction: column;
 }

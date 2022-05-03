@@ -1,4 +1,4 @@
-@use "../../scss/global" as g;
+@use "../../../scss/foundation/index" as f;
 .p-access{
     background-image: url(../../../images/front-page/front-page_map_img.png);
     background-size: cover;
@@ -7,11 +7,11 @@
     height: auto;
     width: 100%;
     
-    @include g.breakpoint(tab){
+    @include f.breakpoint(tab){
         background-image: url(../../../images/front-page/front-page_map_tab_img.png);
         
     }
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         background-image: url(../../../images/front-page/front-page_map_pc_img.png);
         
     }
@@ -45,10 +45,10 @@
             width: 80%;
 
         }
-        @include g.breakpoint(tab){
+        @include f.breakpoint(tab){
             background:rgba(0, 0, 0, .29)
         }
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             width: 60%;
             height: 100%;
         }

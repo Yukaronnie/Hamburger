@@ -1,9 +1,9 @@
-@use "../../scss/global" as g;
+@use "../../../scss/foundation/index" as f;
 //front-page
 .p-main{
     width: 100%;
     text-align: center;
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
         text-align: initial;
         width: 80%;
         
@@ -12,7 +12,7 @@
 
     &-header{
         background-color: #FFF7EF;
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             display: flex;
             justify-content: space-between;
         }
@@ -24,7 +24,7 @@
             font-family: 'Roboto';
             margin: 14px 14px 0 0;
             
-            @include g.breakpoint(pc){
+            @include f.breakpoint(pc){
             display: none;
         }
         
@@ -36,7 +36,7 @@
             color: #707070;
             margin: 39px 0 39px 0;
             clear: both;
-            @include g.breakpoint(pc){
+            @include f.breakpoint(pc){
                 padding-left: 20px;
                 
             }
@@ -44,26 +44,46 @@
             
         }
         .p-search-form{
+            display: flex;
+            justify-content: center;
             padding-bottom: 30px;
-            @include g.breakpoint(pc){
+            @include f.breakpoint(pc){
                 display: flex;
                 align-items: center;
                 padding-right: 20px;
                 padding-bottom: 0;
                 
             }
-            .p-search-form__keyword{
-                height: 46px;
-                width: 250px;
-                background-color: #FFFFFF;
-                border: solid 1px #707070;
-                border-radius: 10px;
-                margin-right: 10px;
-                color: #707070;
-                vertical-align: top;
-            
-            
+            .p-search-form__box{
+                position: relative;
+                font-size: 16px;
+
+                &__keyword{
+                    height: 46px;
+                    width: 250px;
+                    padding-left: 40px;
+                    background-color: #FFFFFF;
+                    border: solid 1px #707070;
+                    border-radius: 10px;
+                    margin-right: 10px;
+                    color: #707070;
+                    vertical-align: top;
+                
+                
+                }
             }
+            .p-search-form__box::before{
+                content:"";
+                width: 20px;
+                height: 20px;
+                background: url(/images/magnifying-glass.svg) no-repeat center center;
+                display: inline-block;
+                position: absolute;
+                top: 15px;
+                left: 15px;
+
+            }
+
             
             
             .p-search-form__submit{

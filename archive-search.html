@@ -41,11 +41,12 @@
                         <!--ヘッダーの検索フォーム-->
                         <form class="p-search-form" action="" method="post">
                             <label for="screen-reader-text" class="screen-reader-text"></label>
-                            <input class="fas fa-2x p-search-form__keyword" type="search" name="screen-reader-text" value="  &#xf002;"></input>
+                            <div class="p-search-form__box">
+                                <input class="p-search-form__box__keyword" type="search" name="screen-reader-text" placeholder="検索ワード"></input>
+                            </div>
                             <input class="p-search-form__submit" type="submit" value="検索"></input>
 
                         </form>
-                    
         
                         
                     </header>
@@ -321,6 +322,6 @@
             </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>

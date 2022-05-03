@@ -1,4 +1,4 @@
-@use "../../scss/global/index" as g;
+@use "../../../scss/foundation/index" as f;
 .c-card{
     margin-bottom: 20px;
     
@@ -6,7 +6,7 @@
         &--tab,&--pc{
             display: none;
         }
-        @include g.breakpoint(tab){
+        @include f.breakpoint(tab){
             width: 50%;  
             &--sp,&--pc{
                 display: none;
@@ -15,7 +15,7 @@
                 display: block;
             }
         }
-        @include g.breakpoint(pc){
+        @include f.breakpoint(pc){
             &--sp,&--tab{
                 display: none;
             }
@@ -25,7 +25,7 @@
         }
 
     }
-    @include g.breakpoint(tab){
+    @include f.breakpoint(tab){
         height: 500px; 
     }
     
@@ -40,7 +40,7 @@
             font-size: 20px;
             text-align: left;
             margin: 23px 0 23px;
-            @include g.breakpoint(pc){
+            @include f.breakpoint(pc){
                 font-size: 36px;
             }
 
@@ -50,7 +50,7 @@
             font-weight: bold;
             text-align: left;
             margin-bottom: 10px;
-            @include g.breakpoint(pc){
+            @include f.breakpoint(pc){
                 font-size: 24px;
             }
         }
@@ -59,14 +59,14 @@
             text-align: left;
             margin-right: 56px;
         }
-        @include g.breakpoint(tab){
+        @include f.breakpoint(tab){
             width: 50%;  
         }
         
 
     }
     
-@include g.breakpoint(tab){
+@include f.breakpoint(tab){
     display: flex;
 
 }

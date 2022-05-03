@@ -1,8 +1,8 @@
-@use "../../scss/global" as g;
+@use "../foundation/index" as f;
 
 .l-main{
     overflow-y: hidden;
-    @include g.breakpoint(pc){
+    @include f.breakpoint(pc){
     display: flex;
 
     }

@@ -1,5 +1,5 @@
 //foundation
-@use "foundation/f-base";
+@use "foundation/base";
 
 //layout
 @use "layout/l-container";
@@ -9,19 +9,19 @@
 @use "layout/l-sidebar";
 
 //component
-@use "component/c-brunch-menu";
-@use "component/c-button";
-@use "component/c-card";
-@use "component/c-sidebar";
+@use "object/component/c-brunch-menu";
+@use "object/component/c-button";
+@use "object/component/c-card";
+@use "object/component/c-sidebar";
 
 //project
-@use "project/p-access";
-@use "project/p-contents";
-@use "project/p-footer";
-@use "project/p-main-header";
-@use "project/p-page-btn";
-@use "project/p-sidebar";
-@use "project/p-top-img";
+@use "object/project/p-access";
+@use "object/project/p-contents";
+@use "object/project/p-footer";
+@use "object/project/p-main-header";
+@use "object/project/p-page-btn";
+@use "object/project/p-sidebar";
+@use "object/project/p-top-img";
 
 
 
