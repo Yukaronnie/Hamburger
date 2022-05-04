@@ -49,7 +49,7 @@ a {
 }
 
 .l-main {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 @media only screen and (min-width: 1025px) {
   .l-main {
@@ -78,79 +78,6 @@ a {
   z-index: 10;
   transition: all 0.6s;
   height: 100%;
-}
-
-.c-brunch-menu {
-  display: inline-block;
-  text-align: center;
-  padding-bottom: calc(1px + 2%);
-}
-.c-brunch-menu__pic {
-  position: relative;
-  display: inline-block;
-  max-width: 700px;
-}
-.c-brunch-menu__pic img {
-  width: 90vw;
-}
-@media only screen and (min-width: 600px) {
-  .c-brunch-menu__pic img {
-    width: 44vw;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  .c-brunch-menu__pic img {
-    width: 35vw;
-    max-width: 700px;
-  }
-}
-.c-brunch-menu__pic h2 {
-  position: absolute;
-  top: 1%;
-  left: 2%;
-  color: #EAEAEA;
-  font-size: 41px;
-  padding: 11px 0 0 10px;
-  font-family: "Roboto";
-}
-.c-brunch-menu__pic h2:after {
-  content: "";
-  display: block;
-  border-bottom: solid 4px #FFFFFF;
-  padding-bottom: 1 9px;
-  width: 3 3px;
-}
-.c-brunch-menu__pic__squares {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 10px;
-  left: 5%;
-  width: 90%;
-  font-family: "M PLUS 1p";
-  text-align: left;
-}
-.c-brunch-menu__pic__square {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #3C2A10;
-  opacity: 0.8;
-  padding: 0 10px;
-  margin-bottom: 10px;
-}
-.c-brunch-menu__pic__square dt {
-  padding: 19px 0;
-  font-size: 22px;
-  font-weight: bold;
-}
-.c-brunch-menu__pic__square dd {
-  font-size: 16px;
-  padding-bottom: 10px;
-}
-@media only screen and (min-width: 600px) {
-  .c-brunch-menu {
-    width: 50%;
-  }
 }
 
 .c-btn--archive {
@@ -254,20 +181,6 @@ a {
   }
 }
 
-.c-sidebar__menu > li {
-  font-size: 15px;
-}
-.c-sidebar__menu > li > a {
-  font-weight: bold;
-}
-.c-sidebar__menu > li ul {
-  font-size: 12px;
-  padding: 10px 0 28px 15px;
-}
-.c-sidebar__menu > li ul li {
-  margin-top: 23px;
-}
-
 .p-access {
   background-image: url(../../../images/front-page/front-page_map_img.png);
   background-size: cover;
@@ -334,6 +247,78 @@ a {
     justify-content: space-between;
   }
 }
+.p-contents__brunch-menu--take-out, .p-contents__brunch-menu--eat-in {
+  display: inline-block;
+  text-align: center;
+  padding-bottom: calc(1px + 2%);
+}
+.p-contents__brunch-menu--take-out__pic, .p-contents__brunch-menu--eat-in__pic {
+  position: relative;
+  display: inline-block;
+  max-width: 700px;
+}
+.p-contents__brunch-menu--take-out__pic img, .p-contents__brunch-menu--eat-in__pic img {
+  width: 90vw;
+}
+@media only screen and (min-width: 600px) {
+  .p-contents__brunch-menu--take-out__pic img, .p-contents__brunch-menu--eat-in__pic img {
+    width: 44vw;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .p-contents__brunch-menu--take-out__pic img, .p-contents__brunch-menu--eat-in__pic img {
+    width: 35vw;
+    max-width: 700px;
+  }
+}
+.p-contents__brunch-menu--take-out__pic h2, .p-contents__brunch-menu--eat-in__pic h2 {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  color: #EAEAEA;
+  font-size: 41px;
+  padding: 11px 0 0 10px;
+  font-family: "Roboto";
+}
+.p-contents__brunch-menu--take-out__pic h2:after, .p-contents__brunch-menu--eat-in__pic h2:after {
+  content: "";
+  display: block;
+  border-bottom: solid 4px #FFFFFF;
+  padding-bottom: 1 9px;
+  width: 3 3px;
+}
+.p-contents__brunch-menu--take-out__pic__squares, .p-contents__brunch-menu--eat-in__pic__squares {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+  width: 90%;
+  font-family: "M PLUS 1p";
+  text-align: left;
+}
+.p-contents__brunch-menu--take-out__pic__square, .p-contents__brunch-menu--eat-in__pic__square {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #3C2A10;
+  opacity: 0.8;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.p-contents__brunch-menu--take-out__pic__square dt, .p-contents__brunch-menu--eat-in__pic__square dt {
+  padding: 19px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.p-contents__brunch-menu--take-out__pic__square dd, .p-contents__brunch-menu--eat-in__pic__square dd {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+@media only screen and (min-width: 600px) {
+  .p-contents__brunch-menu--take-out, .p-contents__brunch-menu--eat-in {
+    width: 50%;
+  }
+}
 
 .p-contents--archive {
   padding: 21px 20px 0;
@@ -361,6 +346,7 @@ a {
 }
 
 .p-contents--single {
+  text-align: left;
   margin: 0 20px;
   color: #3C2A10;
 }
@@ -726,6 +712,7 @@ a {
 }
 
 .p-page-btn {
+  position: relative;
   height: 114px;
   padding: 61px 20px 31px;
   font-size: 16px;
@@ -771,7 +758,8 @@ a {
   }
 }
 .p-page-btn--prev {
-  transform: translateX(-21vw);
+  position: absolute;
+  left: 60px;
 }
 @media only screen and (min-width: 600px) {
   .p-page-btn--prev {
@@ -779,7 +767,8 @@ a {
   }
 }
 .p-page-btn--next {
-  transform: translateX(21vw);
+  position: absolute;
+  right: 60px;
 }
 @media only screen and (min-width: 600px) {
   .p-page-btn--next {
@@ -853,6 +842,19 @@ a {
   .p-sidebar__menu {
     padding-top: 60px;
   }
+}
+.p-sidebar__menu--hamburger, .p-sidebar__menu--sides, .p-sidebar__menu--drinks > li {
+  font-size: 15px;
+}
+.p-sidebar__menu--hamburger > a, .p-sidebar__menu--sides > a, .p-sidebar__menu--drinks > li > a {
+  font-weight: bold;
+}
+.p-sidebar__menu--hamburger ul, .p-sidebar__menu--sides ul, .p-sidebar__menu--drinks > li ul {
+  font-size: 12px;
+  padding: 10px 0 28px 15px;
+}
+.p-sidebar__menu--hamburger ul li, .p-sidebar__menu--sides ul li, .p-sidebar__menu--drinks > li ul li {
+  margin-top: 23px;
 }
 
 .p-sidebar.active {

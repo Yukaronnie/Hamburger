@@ -1,7 +1,7 @@
 @use "../foundation/index" as f;
 
 .l-main{
-    overflow-y: hidden;
+    overflow: hidden;
     @include f.breakpoint(pc){
     display: flex;
 

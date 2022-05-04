@@ -32,6 +32,7 @@ $(function(){
         $(".p-main").removeClass('active');
         $(".p-sidebar").removeClass('active');
         $(".l-container-cover").removeClass('active');
+        $(".l-footer").removeClass('active');
         }
     });
 
