@@ -581,7 +581,7 @@ a {
   width: 100%;
 }
 .p-contents--single__bold p {
-  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .p-footer {
