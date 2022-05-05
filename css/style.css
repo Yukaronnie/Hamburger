@@ -544,6 +544,9 @@ a {
   width: 100%;
   font-size: 16px;
 }
+.p-contents--single__space code {
+  white-space: pre-wrap;
+}
 .p-contents--single__table {
   color: #707070;
   border-collapse: collapse;
@@ -575,6 +578,10 @@ a {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 177px;
+  width: 100%;
+}
+.p-contents--single__bold p {
+  white-space: pre-wrap;
 }
 
 .p-footer {
