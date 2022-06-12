@@ -1,0 +1,32 @@
+
+5/27 
+.p-sidebar__menu--hamburger, .p-sidebar__menu--sides, .p-sidebar__menu--drinks > li を
+.p-sidebar__menu--hamburger　> li, .p-sidebar__menu--sides　> li, .p-sidebar__menu--drinks > li 
+にすると、おかしくなるが、元のデータをブラウザ表示すると大丈夫。WordPress はおかしいなぜ？。
+
+//
+.l-sidebar.active {
+    height: 100%;
+}
+.p-sidebar.active {
+  height: 100%;
+}
+にしないと、サイドバーの長さが短くなる。なぜ？
+スマホサイズの場合は height:auto でいいが、それ以外はサイドバーの長さが足りなくなってしまう。
+//
+タブレットサイズ以下でサイドバーがないと、footerが上がってくる。なぜ？（個別投稿の page.php）
+
+5/30
+footer が上がってくる問題
+l-main{
+height: calc( var(--vh) * 100 );}
+→ content が短ければいいが、長いと被ってしまう。
+position: relative&absolute/bottom: 0も同様
+
+6/6
+opacity のせいで p-access の色が薄くなる
+
+6/12
+Eat-In と Take-Out の機能を追加したい。
+カスタムメニュー p.196の wp_nav_menu()か、WP_Query()?
+

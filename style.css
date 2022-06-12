@@ -1,3 +1,6 @@
+/*
+Theme Name: Hamburger
+*/
 html {
   font-size: 62.5%;
 }
@@ -50,6 +53,7 @@ a {
 
 .l-main {
   overflow: hidden;
+  /*height: calc(var(--vh,1vh)*100);*/
 }
 @media only screen and (min-width: 1025px) {
   .l-main {
@@ -67,7 +71,7 @@ a {
 }
 @media only screen and (min-width: 1025px) {
   .l-sidebar {
-    width: 20%;
+    width: 25%;
     position: static;
     overflow-y: hidden;
   }
@@ -78,6 +82,14 @@ a {
   z-index: 10;
   transition: all 0.6s;
   height: 100%;
+}
+.admin-bar .l-sidebar.active {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 785px) {
+  .admin-bar .l-sidebar.active {
+    margin-top: 30px;
+  } 
 }
 
 .c-btn--archive {
@@ -168,7 +180,7 @@ a {
 .c-card--intro p {
   font-size: 16px;
   text-align: left;
-  margin-right: 56px;
+  
 }
 @media only screen and (min-width: 600px) {
   .c-card--intro {
@@ -185,9 +197,18 @@ a {
   background-image: url(../../../images/front-page/front-page_map_img.png);
   background-size: cover;
   background-position: center center;
-  background-color: black;
   height: auto;
   width: 100%;
+  position: relative;
+
+}
+.p-access iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
 }
 @media only screen and (min-width: 600px) {
   .p-access {
@@ -200,8 +221,9 @@ a {
   }
 }
 .p-access__text {
-  background: linear-gradient(rgba(0, 0, 0, 0.29) 0%, rgba(0, 0, 0, 0.29) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
 }
+
 .p-access__text h2 {
   font-family: "M PLUS 1p", sans-serif;
   font-size: 30px;
@@ -228,7 +250,7 @@ a {
 }
 @media only screen and (min-width: 600px) {
   .p-access__text {
-    background: rgba(0, 0, 0, 0.29);
+    background: rgba(0, 0, 0, 1);
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -587,7 +609,7 @@ a {
 .p-footer {
   color: #ffffff;
   text-align: center;
-  background-image: url(../../../images/front-page/front-page_footer_brown_img.png);
+  background-image: url(./images/front-page/front-page_footer_brown_img.png);
   background-size: cover;
 }
 .p-footer__menu {
@@ -627,7 +649,7 @@ a {
 @media only screen and (min-width: 1025px) {
   .p-main {
     text-align: initial;
-    width: 80%;
+    width: 75%;
   }
 }
 .p-main-header {
@@ -696,7 +718,7 @@ a {
   content: "";
   width: 20px;
   height: 20px;
-  background: url(/images/magnifying-glass.svg) no-repeat center center;
+  background: url(./images/magnifying-glass.svg) no-repeat center center;
   display: inline-block;
   position: absolute;
   top: 15px;
@@ -719,13 +741,17 @@ a {
 }
 
 .p-page-btn {
-  position: relative;
-  height: 114px;
-  padding: 61px 20px 31px;
+  
+  height: 96px;
+  padding: 30px 20px 40px;
   font-size: 16px;
   color: #707070;
-  display: flex;
-  justify-content: space-between;
+}
+.p-page-btn--prev {
+  float: left;
+}
+.p-page-btn--next {
+  float: right;
 }
 @media only screen and (min-width: 600px) {
   .p-page-btn {
@@ -764,30 +790,28 @@ a {
     color: #FFFFFF;
   }
 }
-.p-page-btn--prev {
-  position: absolute;
-  left: 60px;
-}
+
 @media only screen and (min-width: 600px) {
   .p-page-btn--prev {
     display: none;
   }
 }
-.p-page-btn--next {
-  position: absolute;
-  right: 60px;
-}
+
 @media only screen and (min-width: 600px) {
   .p-page-btn--next {
     display: none;
   }
 }
+@media only screen and (min-width: 600px) {
+  .p-sidebar {
+    height: 100%;
 
+  }
+}
 .p-sidebar {
   margin-left: 10%;
   background-color: #F2EDE9;
   color: #707070;
-  height: 100%;
 }
 @media only screen and (min-width: 600px) {
   .p-sidebar {
@@ -842,7 +866,7 @@ a {
   }
 }
 .p-sidebar__menu {
-  margin-left: 46px;
+  margin-left: 30px;
   padding-top: 190px;
 }
 @media only screen and (min-width: 1025px) {
@@ -850,11 +874,12 @@ a {
     padding-top: 60px;
   }
 }
-.p-sidebar__menu--hamburger, .p-sidebar__menu--sides, .p-sidebar__menu--drinks > li {
+.menu-item-object-post > a, .p-sidebar__menu--hamburger, .p-sidebar__menu--sides, .p-sidebar__menu--drinks > li {
   font-size: 15px;
 }
-.p-sidebar__menu--hamburger > a, .p-sidebar__menu--sides > a, .p-sidebar__menu--drinks > li > a {
+.menu-item-object-category > a, .p-sidebar__menu--hamburger > a, .p-sidebar__menu--sides > a, .p-sidebar__menu--drinks > li > a {
   font-weight: bold;
+  font-size: 20px;
 }
 .p-sidebar__menu--hamburger ul, .p-sidebar__menu--sides ul, .p-sidebar__menu--drinks > li ul {
   font-size: 12px;
@@ -864,9 +889,8 @@ a {
   margin-top: 23px;
 }
 
-.p-sidebar.active {
-  height: auto;
-}
+
+
 
 .p-top-img--front-page, .p-top-img--archive, .p-top-img--single, .p-top-img--page {
   height: auto;
@@ -994,5 +1018,23 @@ a {
   max-height: 700px;
   object-fit: cover;
 }
+.wp-pagenavi{
+  display: none;
+}
 
+@media only screen and (min-width: 600px) {
+  .wp-pagenavi{
+    display: block;
+    text-align: center;
+    font-size:  16px;
+    height: 96px;
+    padding: 30px 20px 40px;
+    color: #707070;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .p-page-btn{
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

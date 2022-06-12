@@ -35,7 +35,7 @@ $(function(){
         $(".l-footer").removeClass('active');
         }
     });
-
+    /*$('.l-sidebar').css('height',$(window).height());*/
 });
        
          
