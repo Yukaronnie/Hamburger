@@ -2,7 +2,7 @@
                     <!--アーカイブヘッダー下-->
             <figure class="p-top-img--archive">
                 <img src="<?php echo get_template_directory_uri();?>/images/archive/archive_top_img.png">
-                <h2>Menu : <?php the_category();?></h2>
+                <h2>Menu : </h2>
             </figure>
             <article class="p-contents--archive">
             

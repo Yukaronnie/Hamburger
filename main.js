@@ -34,7 +34,7 @@ $(function(){
         $(".p-main").removeClass('active');
         $(".p-sidebar").removeClass('active');
         $(".l-container-cover").removeClass('active');
-        $(".l-container").removeClass('active');
+        $(".l-container").addClass('active');
         $(".l-footer").removeClass('active');
         }
     });

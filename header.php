@@ -16,7 +16,7 @@
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
         <!--フロントページ全体-->
-        <div>
+        <div class="l-container">
         
             <div class="l-container-cover"></div>
             <div class="l-main">
